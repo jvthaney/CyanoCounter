@@ -127,20 +127,21 @@
     font-family: "Cabin", sans-serif;
 }
 .instructions {
-    font-size: 25px;
+    font-size: 18px;
     text-align: left;
 }
 .instructions2 {
-    font-size: 25px;
+    font-size: 18px;
     text-align: left;
 }
 .second {
     margin-top: 25px;
 }
 .submitinfo {
-    width: 100px;
+    width: 120px;
     margin-top: 10px;
-    font-size: 14px;
+    margin-left: 10px;
+    font-size: 16px;
 }
 hr {
     border: none;
@@ -150,3 +151,33 @@ hr {
     text-align: center;
     height: 5px;
 }
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+    list-style-type: none; /* Remove bullets */
+    font-size: 20px;
+    font-family: 'Cabin', sans-serif;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #111;
+  }
+  
+  .active {
+    background-color: #04AA6D;
+  }
