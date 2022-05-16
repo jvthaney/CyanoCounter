@@ -1,6 +1,6 @@
 ## Welcome to the CyanoCounter! 
 
-This counter is a user-friendly tool designed to assist community scientists in counting cyanobacteria from water samples for lake monitoring purposes on Lake Sunapee, NH. 
+This counter is a user-friendly tool designed to assist community scientists in counting cyanobacteria from water samples for lake monitoring purposes. 
 
 ### To use the counter:
 **1.** Open the [CyanoCounter page](https://jvthaney.github.io/cyanocounter/).
