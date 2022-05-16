@@ -1,37 +1,27 @@
-## Welcome to GitHub Pages
+## Welcome to the CyanoCounter! 
 
-You can use the [editor on GitHub](https://github.com/jvthaney/cyanocounter/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+This counter is a user-friendly tool designed to assist community scientists in counting cyanobacteria from water samples for lake monitoring purposes on Lake Sunapee, NH. 
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### To use the counter:
+1. Open the [CyanoCounter page](https://jvthaney.github.io/cyanocounter/)
+2. Enter your name, date of sample collection, time of collection, general location on the lake, and coordinates (lat/lon).
+3. **Click the "Submit Info" button** to save this information.
 
-### Markdown
+<img src="https://user-images.githubusercontent.com/70969187/168647221-057816f7-54f6-453c-9cbb-3e689db5a703.png" width="1097" height="143" />
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+4. Now you're ready to count. As you move across your slide, use the counters to keep track of the number of each type of cyanobacteria you encounter. Remember to count all cells/colonies from **5 random rows** on the slide. 
+    - Use the **+** button to increase the number, and the **-** button to decrease the count
+    - The total number of each cyanobacteria counted is displayed at the bottom of each colored box
+    - If you need to reset the counters at any time, just click the "**Reset counters**" button
 
-```markdown
-Syntax highlighted code block
+<img src="https://user-images.githubusercontent.com/70969187/168648727-8000bb4d-8203-46e1-a906-e9bc8c95fa95.png" width="550" height="245" />
 
-# Header 1
-## Header 2
-### Header 3
+5. When you are finished counting 5 rows, click "**Export data**" to download these data to the computer. 
+    - The file will be downloaded as a .csv and will contain the total # of each cyanboacteria type and the information you provided at the top of the page
+    - The filename will automatically be set as your name and the date
+    - A preview of the data is shown at the very bottom of the page
 
-- Bulleted
-- List
 
-1. Numbered
-2. List
+<img src="https://user-images.githubusercontent.com/70969187/168650412-c16311a4-5ab1-4ea9-becd-17ff2874df3e.png" width="550" height="277.42" />
+    
 
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/jvthaney/cyanocounter/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
