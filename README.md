@@ -7,7 +7,7 @@ This counter is a user-friendly tool designed to assist community scientists in 
 
 **2.** Enter your name, date of sample collection, time of collection, general location on the lake, and coordinates (lat/lon).
 
-**3.** Click the **"Submit Info"** button** to save this information.
+**3.** Click the **"Submit Info"** button to save this information.
 
 
 <img src="https://user-images.githubusercontent.com/70969187/168647221-057816f7-54f6-453c-9cbb-3e689db5a703.png" width="800" height="104.64" />
