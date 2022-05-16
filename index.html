@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content=""width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia|Ubuntu|Advent Pro|Oswald|Noto Sans|Assistant|Cabin">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">    <title>Tally counter</title>
     <link href="main.css" rel="stylesheet">
     <link href="main.js">
@@ -11,13 +12,48 @@
 
 <body class="jumbotron">
     <div class="navheader">
-        <nav class="navbar navbar-dark bg-dark navbar-expand-lg fixed-top">
+        <nav class="navbar-light bg-dark navbar-expand-lg fixed-top">
           <a class="navbar-brand" href="#">Sunapee Cyano Counter</a>
         </nav>
       </div>
-      <h1 class="text-center"></h1>
-    <h1></h1>
-    <div class="container">
+      <form class="row g-3 first">
+        <div class="col-md-2">
+            <label for="inputname" class="form-label">Name of counter</label>
+            <input type="text" class="form-control nameinput" id="text1" placeholder="Type your name">
+          </div>
+          <div class="col-md-2">
+            <label for="inputdate" class="form-label ">Date</label>
+            <input type="date" class="form-control dateinput" id="text2">
+          </div>
+          <div class="col-md-2">
+            <label for="inputtime" class="form-label time">Time of collection</label>
+            <input type="time" class="form-control timeinput" id="text3">
+          </div>
+          <div class="col-md-2">
+            <label for="inputlocation" class="form-label ">Sampling Location</label>
+            <input type="text" class="form-control locationinput" id="text4">
+          </div>
+          <div class="col-md-2">
+            <label for="inputlat" class="form-label">Latitude (e.g., 43.385787)</label>
+            <input type="text" class="form-control latinput" id="text5">
+          </div>
+          <div class="col-md-2">
+            <label for="inputlon" class="form-label loninput">Longitude (e.g., -72.08125)</label>
+            <input type="name" class="form-control loninput" id="text6">
+          </div>
+          <div class="row">
+          <button type="button" class="btn btn-r bg-light submitinfo" id="subbtn" onclick="fn1()">Submit info</button>
+          <p id="outalert"></p>
+        </div>
+
+
+          <div class="container second">
+              <p class="instructions">1. Use the counters below to keep track of the #cells/colonies from 5 random rows on your microscope slide.</p>
+              <p class="instructions2">2. When you're done counting, click "Export data" to download and save your data</p>
+          </div>
+    </form>
+
+      <div class="container second">
         <div class="row">
             <div class="col-md-3 col-sm-6">
                 <div class="counter">
@@ -29,7 +65,6 @@
                     <h3>Microcystis</h3>
                     <span class="totalcount1 counter-value">0</span>
                 </div>
-
             </div>
             <div class="col-md-3 col-sm-6">
                 <div class="counter pink">
@@ -62,13 +97,122 @@
                     <button class="btn add mx-10 mt-10 min4">-</button>
                     <h3>Chroococcus</h3>
                     <span class="totalcount4 counter-value">0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+            <div class="col-md-3 col-sm-6">
+                <div class="counter teal">
+                    <div class="counter-icon">
+                        <i class="fa fa-rocket"></i>
+                    </div>
+                    <button class="btn add mx-10 mt-10 add5">+</button>
+                    <button class="btn add mx-10 mt-10 min5">-</button>
+                    <h3>Coelosphaerium</h3>
+                    <span class="totalcount5 counter-value">0</span>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="counter grey">
+                    <div class="counter-icon">
+                        <i class="fa fa-rocket"></i>
+                    </div>
+                    <button class="btn add mx-10 mt-10 add6">+</button>
+                    <button class="btn add mx-10 mt-10 min6">-</button>
+                    <h3>Aphanocapsa</h3>
+                    <span class="totalcount6 counter-value">0</span>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="counter rose">
+                    <div class="counter-icon">
+                        <i class="fa fa-rocket"></i>
+                    </div>
+                    <button class="btn add mx-10 mt-10 add7">+</button>
+                    <button class="btn add mx-10 mt-10 min7">-</button>
+                    <h3>Woronichinia</h3>
+                    <span class="totalcount7 counter-value">0</span>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="counter wine">
+                    <div class="counter-icon">
+                        <i class="fa fa-rocket"></i>
+                    </div>
+                    <button class="btn add mx-10 mt-10 add8">+</button>
+                    <button class="btn add mx-10 mt-10 min8">-</button>
+                    <h3>Oscillatoria</h3>
+                    <span class="totalcount8 counter-value">0</span>
                 </div>
             </div>
 
-
         </div>
     </div>
-    <button class="btn-r reset bg-light" >Reset</button>
+    <button type="button" class="btn btn-r exp bg-light">Export data</button>
+    <br><br>
+        <button class="btn btn-r reset bg-light" >Reset counters</button>
+    <br><br>
+    <table class="tbl", border="1" cellspacing="0" cellpadding="10">
+        <tr>
+            <th>Name</th>
+            <th>Date</th>
+            <th>Time</th>
+            <th>Location</th>
+            <th>Lat</th>
+            <th>Lon</th>
+        </tr>
+        <tr>
+            <td class="nameoutput" id="output1"></td>
+            <td class="dateoutput" id="output2"></td>
+            <td class="timeoutput" id="output3"></td>
+            <td class="locationoutput" id="output4"></td>
+            <td class="latoutput" id="output5"></td>
+            <td class="lonoutput" id="output6"></td>
+        </tr>
+    </table> 
+    <br>
+        <table class="tbl", border="1" cellspacing="0" cellpadding="10" >
+            <tr>
+                <th>Cyanobacteria</th>
+                <th>Count</th>
+            </tr>
+            <tr>
+                <td>Microcystis</td>
+                <td class="tbl1">0</td>
+            </tr>
+            <tr>
+                <td>Dolichospermum</td>
+                <td class="tbl2">0</td>
+            </tr>
+            <tr>
+                <td>Gloeotrichia</td>
+                <td class="tbl3">0</td>
+            </tr>
+            <tr>
+                <td>Chroococcus</td>
+                <td class="tbl4">0</td>
+            </tr>
+            <tr>
+                <td>Coelosphaerium</td>
+                <td class="tbl5">0</td>
+            </tr>
+            <tr>
+                <td>Aphanocapsa</td>
+                <td class="tbl6">0</td>
+            </tr>
+            <tr>
+                <td>Woronichinia</td>
+                <td class="tbl7 counter-value">0</td>
+            </tr>
+            <tr>
+                <td>Oscillatoria</td>
+                <td class="tbl8 counter-value">0</td>
+            </tr>
+        </table>
+        <br>
     <script src="main.js"></script>
+    
 </body>
 </html>
