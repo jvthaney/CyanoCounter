@@ -42,6 +42,26 @@
             <label for="inputlon" class="form-label loninput">Longitude (e.g., -72.08125)</label>
             <input type="name" class="form-control loninput" id="text6">
           </div>
+          <div class="col-md-3">
+            <label for="inputlon" class="form-label loninput">Volume sample in graduated cylinder (ml)</label>
+            <input type="grad" class="form-control gradinput" id="text7">
+          </div>
+          <div class="col-sm-2">
+            <label for="inputlon" class="form-label depthinput">Depth sampled (m)</label>
+            <input type="depth" class="form-control depthinput" id="text8" value="2">
+          </div>
+          <div class="col-md-3">
+            <label for="inputlon" class="form-label diaminput">Net diameter (m; default = LSPA net size)</label>
+            <input type="name" class="form-control daiminput" id="text9" value="0.16">
+          </div>
+          <div class="col-md-1">
+            <label for="inputlon" class="form-label rowinput">Rows counted</label>
+            <input type="rows" class="form-control rowinput" id="text10" value="5">
+          </div>
+          <div class="col-md-2">
+            <label for="inputlon" class="form-label noteinput">Counter Notes</label>
+            <input type="notes" class="form-control noteinput" id="text11">
+          </div>
           <div class="row">
           <button type="button" class="btn btn-r bg-light submitinfo" id="subbtn" onclick="fn1()">Submit info</button>
           <p id="outalert"></p>
@@ -168,6 +188,11 @@
             <th>Location</th>
             <th>Lat</th>
             <th>Lon</th>
+            <th>Vol sample (ml)</th>
+            <th>Depth (m)</th>
+            <th>Net diam (m)</th>
+            <th>Rows counted</th>
+            <th>Counter notes</th>
         </tr>
         <tr>
             <td class="nameoutput" id="output1"></td>
@@ -176,6 +201,11 @@
             <td class="locationoutput" id="output4"></td>
             <td class="latoutput" id="output5"></td>
             <td class="lonoutput" id="output6"></td>
+            <td class="gradoutput" id="output7"></td>
+            <td class="depthoutput" id="output8"></td>
+            <td class="diamoutput" id="output9"></td>
+            <td class="rowoutput" id="output10"></td>
+            <td class="noteoutput" id="output11"></td>
         </tr>
     </table> 
     <br>
@@ -183,38 +213,56 @@
             <tr>
                 <th>Cyanobacteria</th>
                 <th>Count</th>
+                <th>Cells/slide</th>
+                <th>Cells/L</th>
             </tr>
             <tr>
                 <td>Microcystis</td>
                 <td class="tbl1">0</td>
+                <td class="tbl1b" id="tbl1b">0</td>
+                <td class="tbl1c" id="tbl1c">0</td>
             </tr>
             <tr>
                 <td>Dolichospermum</td>
                 <td class="tbl2">0</td>
+                <td class="tbl2b" id="tbl2b">0</td>
+                <td class="tbl2c" id="tbl2c">0</td>
             </tr>
             <tr>
                 <td>Gloeotrichia</td>
                 <td class="tbl3">0</td>
+                <td class="tbl3b" id="tbl3b">0</td>
+                <td class="tbl3c" id="tbl3c">0</td>
             </tr>
             <tr>
                 <td>Chroococcus</td>
                 <td class="tbl4">0</td>
+                <td class="tbl4b" id="tbl4b">0</td>
+                <td class="tbl4c" id="tbl4c">0</td>
             </tr>
             <tr>
                 <td>Coelosphaerium</td>
                 <td class="tbl5">0</td>
+                <td class="tbl5b" id="tbl5b">0</td>
+                <td class="tbl5c" id="tbl5c">0</td>
             </tr>
             <tr>
                 <td>Aphanocapsa</td>
                 <td class="tbl6">0</td>
+                <td class="tbl6b" id="tbl6b">0</td>
+                <td class="tbl6c" id="tbl6c">0</td>
             </tr>
             <tr>
                 <td>Woronichinia</td>
                 <td class="tbl7 counter-value">0</td>
+                <td class="tbl7b counter-value" id="tbl7b">0</td>
+                <td class="tbl7c" id="tbl7c">0</td>
             </tr>
             <tr>
                 <td>Oscillatoria</td>
                 <td class="tbl8 counter-value">0</td>
+                <td class="tbl8b counter-value" id="tbl8b">0</td>
+                <td class="tbl8c counter-value" id="tbl8c">0</td>
             </tr>
         </table>
         <br>

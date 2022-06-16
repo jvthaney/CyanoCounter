@@ -33,9 +33,31 @@ let tbl5 = document.querySelector(".tbl5");
 let tbl6 = document.querySelector(".tbl6");
 let tbl7 = document.querySelector(".tbl7");
 let tbl8 = document.querySelector(".tbl8");
-
+let tbl1b = document.querySelector(".tbl1b");
+let tbl2b = document.querySelector(".tbl2b");
+let tbl3b = document.querySelector(".tbl3b");
+let tbl4b = document.querySelector(".tbl4b");
+let tbl5b = document.querySelector(".tbl5b");
+let tbl6b = document.querySelector(".tbl6b");
+let tbl7b = document.querySelector(".tbl7b");
+let tbl8b = document.querySelector(".tbl8b");
+let tbl1c = document.querySelector(".tbl1c");
+let tbl2c = document.querySelector(".tbl2c");
+let tbl3c = document.querySelector(".tbl3c");
+let tbl4c = document.querySelector(".tbl4c");
+let tbl5c = document.querySelector(".tbl5c");
+let tbl6c = document.querySelector(".tbl6c");
+let tbl7c = document.querySelector(".tbl7c");
+let tbl8c = document.querySelector(".tbl8c");
 let reset = document.querySelector(".reset");
 let exp = document.querySelector(".exp");
+
+let gradinput = document.querySelector(".gradinput");
+let depthinput = document.querySelector(".depthinput");
+let diaminput = document.querySelector(".diaminput");
+let gradoutput = document.querySelector(".gradoutput");
+let depthoutput = document.querySelector(".depthoutput");
+let diamoutput = document.querySelector(".diamoutput");
 
 //Detect clicks on each button
 add1.addEventListener('click', addCounter1);
@@ -60,49 +82,200 @@ reset.addEventListener('click', resetCounter);
 exp.addEventListener('click', tableToCSV);
 
 
+//Ccalculate cells per sample
+// var gradcylinder = gradoutput.innerHTML/1000
+// var cellsperslide = counter_num * 4
+// var percentcounted = 1/gradcylinder
+// var cellspersample = cellsperslide/percentcounted
+//Then volume lake water
+// var diameter = diaminput.innerHTML
+// var depth = depthinput.innerHTML
+// var lakewater = Math.PI * (diameter/2)^2 * depth
+//Then cells per volume lake water
+// var cellsperlake = cellspersample/lakewater
+
+
+
 //////////Add-button functions
 function addCounter1(){
+    //First add counter # to table
     // console.log("It's working")
     counter_num = totalcount1.innerHTML
     totalcount1.innerHTML = parseInt(counter_num) + 1
     tbl1.innerHTML = parseInt(counter_num) + 1
-    nameoutput.innerHTML = parseInt(counter_num) + 1
+    var rows = parseFloat(document.getElementById("text10").value)
+    var percslide = parseFloat(rows / 20) 
+    var gradcylinder = parseFloat(document.getElementById("text7").value)
+    var literconv = parseFloat(1000)
+    var gradcylinderliter = parseFloat(gradcylinder / literconv)
+    var cellsperslide = parseFloat(tbl1.innerHTML / percslide) //5 counted rows x 4 = total of 20 rows per slide
+    var chambervol = parseFloat(0.001)//1 ml = 0.001 L
+    var propcounted = parseFloat(chambervol / gradcylinderliter)
+    var cellspersample = parseFloat(cellsperslide / propcounted)
+    var diameter = parseFloat(document.getElementById("text9").value)
+    var depth = parseFloat(document.getElementById("text8").value)
+    var r = parseFloat(diameter/2)
+    var lakewaterm3 = parseFloat(Math.PI * r^2 * depth)//Volume cylinder = pi*r^2*h
+    var lakewaterL = parseFloat(lakewaterm3 * 1000)
+    var cellsperlake = parseFloat(cellspersample/lakewaterL)
+    tbl1b.innerHTML = parseFloat(cellsperslide.toFixed(3))
+    tbl1c.innerHTML = parseFloat(cellsperlake.toFixed(3))
 };
+
 function addCounter2(){
     counter_num = totalcount2.innerHTML
     totalcount2.innerHTML = parseInt(counter_num) + 1
     tbl2.innerHTML = parseInt(counter_num) + 1
+    var rows = parseFloat(document.getElementById("text10").value)
+    var percslide = parseFloat(rows / 20) 
+    var gradcylinder = parseFloat(document.getElementById("text7").value)
+    var literconv = parseFloat(1000)
+    var gradcylinderliter = parseFloat(gradcylinder / literconv)
+    var cellsperslide = parseFloat((tbl2.innerHTML) / percslide) //5 counted rows x 4 = total of 20 rows per slide
+    var chambervol = parseFloat(0.001)//1 ml = 0.001 L
+    var propcounted = parseFloat(chambervol / gradcylinderliter)
+    var cellspersample = parseFloat(cellsperslide / propcounted)
+    var diameter = parseFloat(document.getElementById("text9").value)
+    var depth = parseFloat(document.getElementById("text8").value)
+    var r = parseFloat(diameter/2)
+    var lakewaterm3 = parseFloat(Math.PI * r^2 * depth)//Volume cylinder = pi*r^2*h
+    var lakewaterL = parseFloat(lakewaterm3 * 1000)
+    var cellsperlake = parseFloat(cellspersample/lakewaterL)
+    tbl2b.innerHTML = parseFloat(cellsperslide.toFixed(3))
+    tbl2c.innerHTML = parseFloat(cellsperlake.toFixed(3))
 };
 function addCounter3(){
     counter_num = totalcount3.innerHTML
     totalcount3.innerHTML = parseInt(counter_num) + 1
     tbl3.innerHTML = parseInt(counter_num) + 1
+    var rows = parseFloat(document.getElementById("text10").value)
+    var percslide = parseFloat(rows / 20) 
+    var gradcylinder = parseFloat(document.getElementById("text7").value)
+    var literconv = parseFloat(1000)
+    var gradcylinderliter = parseFloat(gradcylinder / literconv)
+    var cellsperslide = parseFloat((tbl3.innerHTML) / percslide) //5 counted rows x 4 = total of 20 rows per slide
+    var chambervol = parseFloat(0.001)//1 ml = 0.001 L
+    var propcounted = parseFloat(chambervol / gradcylinderliter)
+    var cellspersample = parseFloat(cellsperslide / propcounted)
+    var diameter = parseFloat(document.getElementById("text9").value)
+    var depth = parseFloat(document.getElementById("text8").value)
+    var r = parseFloat(diameter/2)
+    var lakewaterm3 = parseFloat(Math.PI * r^2 * depth)//Volume cylinder = pi*r^2*h
+    var lakewaterL = parseFloat(lakewaterm3 * 1000)
+    var cellsperlake = parseFloat(cellspersample/lakewaterL)
+    tbl3b.innerHTML = parseFloat(cellsperslide.toFixed(3))
+    tbl3c.innerHTML = parseFloat(cellsperlake.toFixed(3))
 };
 function addCounter4(){
     counter_num = totalcount4.innerHTML
     totalcount4.innerHTML = parseInt(counter_num) + 1
     tbl4.innerHTML = parseInt(counter_num) + 1
+    var rows = parseFloat(document.getElementById("text10").value)
+    var percslide = parseFloat(rows / 20) 
+    var gradcylinder = parseFloat(document.getElementById("text7").value)
+    var literconv = parseFloat(1000)
+    var gradcylinderliter = parseFloat(gradcylinder / literconv)
+    var cellsperslide = parseFloat((tbl4.innerHTML) / percslide) //5 counted rows x 4 = total of 20 rows per slide
+    var chambervol = parseFloat(0.001)//1 ml = 0.001 L
+    var propcounted = parseFloat(chambervol / gradcylinderliter)
+    var cellspersample = parseFloat(cellsperslide / propcounted)
+    var diameter = parseFloat(document.getElementById("text9").value)
+    var depth = parseFloat(document.getElementById("text8").value)
+    var r = parseFloat(diameter/2)
+    var lakewaterm3 = parseFloat(Math.PI * r^2 * depth)//Volume cylinder = pi*r^2*h
+    var lakewaterL = parseFloat(lakewaterm3 * 1000)
+    var cellsperlake = parseFloat(cellspersample/lakewaterL)
+    tbl4b.innerHTML = parseFloat(cellsperslide.toFixed(3))
+    tbl4c.innerHTML = parseFloat(cellsperlake.toFixed(3))
 };
 function addCounter5(){
     counter_num = totalcount5.innerHTML
     totalcount5.innerHTML = parseInt(counter_num) + 1
     tbl5.innerHTML = parseInt(counter_num) + 1
+    var rows = parseFloat(document.getElementById("text10").value)
+    var percslide = parseFloat(rows / 20) 
+    var gradcylinder = parseFloat(document.getElementById("text7").value)
+    var literconv = parseFloat(1000)
+    var gradcylinderliter = parseFloat(gradcylinder / literconv)
+    var cellsperslide = parseFloat((tbl5.innerHTML) / percslide) //5 counted rows x 4 = total of 20 rows per slide
+    var chambervol = parseFloat(0.001)//1 ml = 0.001 L
+    var propcounted = parseFloat(chambervol / gradcylinderliter)
+    var cellspersample = parseFloat(cellsperslide / propcounted)
+    var diameter = parseFloat(document.getElementById("text9").value)
+    var depth = parseFloat(document.getElementById("text8").value)
+    var r = parseFloat(diameter/2)
+    var lakewaterm3 = parseFloat(Math.PI * r^2 * depth)//Volume cylinder = pi*r^2*h
+    var lakewaterL = parseFloat(lakewaterm3 * 1000)
+    var cellsperlake = parseFloat(cellspersample/lakewaterL)
+    tbl5b.innerHTML = parseFloat(cellsperslide.toFixed(3))
+    tbl5c.innerHTML = parseFloat(cellsperlake.toFixed(3))
 };
 function addCounter6(){
     // console.log("It's working")
     counter_num = totalcount6.innerHTML
     totalcount6.innerHTML = parseInt(counter_num) + 1
     tbl6.innerHTML = parseInt(counter_num) + 1
+    var rows = parseFloat(document.getElementById("text10").value)
+    var percslide = parseFloat(rows / 20) 
+    var gradcylinder = parseFloat(document.getElementById("text7").value)
+    var literconv = parseFloat(1000)
+    var gradcylinderliter = parseFloat(gradcylinder / literconv)
+    var cellsperslide = parseFloat((tbl6.innerHTML) / percslide) //5 counted rows x 4 = total of 20 rows per slide
+    var chambervol = parseFloat(0.001)//1 ml = 0.001 L
+    var propcounted = parseFloat(chambervol / gradcylinderliter)
+    var cellspersample = parseFloat(cellsperslide / propcounted)
+    var diameter = parseFloat(document.getElementById("text9").value)
+    var depth = parseFloat(document.getElementById("text8").value)
+    var r = parseFloat(diameter/2)
+    var lakewaterm3 = parseFloat(Math.PI * r^2 * depth)//Volume cylinder = pi*r^2*h
+    var lakewaterL = parseFloat(lakewaterm3 * 1000)
+    var cellsperlake = parseFloat(cellspersample/lakewaterL)
+    tbl6b.innerHTML = parseFloat(cellsperslide.toFixed(3))
+    tbl6c.innerHTML = parseFloat(cellsperlake.toFixed(3))
 };
 function addCounter7(){
     counter_num = totalcount7.innerHTML
     totalcount7.innerHTML = parseInt(counter_num) + 1
     tbl7.innerHTML = parseInt(counter_num) + 1
+    var rows = parseFloat(document.getElementById("text10").value)
+    var percslide = parseFloat(rows / 20) 
+    var gradcylinder = parseFloat(document.getElementById("text7").value)
+    var literconv = parseFloat(1000)
+    var gradcylinderliter = parseFloat(gradcylinder / literconv)
+    var cellsperslide = parseFloat((tbl7.innerHTML) / percslide) //5 counted rows x 4 = total of 20 rows per slide
+    var chambervol = parseFloat(0.001)//1 ml = 0.001 L
+    var propcounted = parseFloat(chambervol / gradcylinderliter)
+    var cellspersample = parseFloat(cellsperslide / propcounted)
+    var diameter = parseFloat(document.getElementById("text9").value)
+    var depth = parseFloat(document.getElementById("text8").value)
+    var r = parseFloat(diameter/2)
+    var lakewaterm3 = parseFloat(Math.PI * r^2 * depth)//Volume cylinder = pi*r^2*h
+    var lakewaterL = parseFloat(lakewaterm3 * 1000)
+    var cellsperlake = parseFloat(cellspersample/lakewaterL)
+    tbl7b.innerHTML = parseFloat(cellsperslide.toFixed(3))
+    tbl7c.innerHTML = parseFloat(cellsperlake.toFixed(3))
 };
 function addCounter8(){
     counter_num = totalcount8.innerHTML
     totalcount8.innerHTML = parseInt(counter_num) + 1
     tbl8.innerHTML = parseInt(counter_num) + 1
+    var rows = parseFloat(document.getElementById("text10").value)
+    var percslide = parseFloat(rows / 20) 
+    var gradcylinder = parseFloat(document.getElementById("text7").value)
+    var literconv = parseFloat(1000)
+    var gradcylinderliter = parseFloat(gradcylinder / literconv)
+    var cellsperslide = parseFloat((tbl8.innerHTML) / percslide) //5 counted rows x 4 = total of 20 rows per slide
+    var chambervol = parseFloat(0.001)//1 ml = 0.001 L
+    var propcounted = parseFloat(chambervol / gradcylinderliter)
+    var cellspersample = parseFloat(cellsperslide / propcounted)
+    var diameter = parseFloat(document.getElementById("text9").value)
+    var depth = parseFloat(document.getElementById("text8").value)
+    var r = parseFloat(diameter/2)
+    var lakewaterm3 = parseFloat(Math.PI * r^2 * depth)//Volume cylinder = pi*r^2*h
+    var lakewaterL = parseFloat(lakewaterm3 * 1000)
+    var cellsperlake = parseFloat(cellspersample/lakewaterL)
+    tbl8b.innerHTML = parseFloat(cellsperslide.toFixed(3))
+    tbl8c.innerHTML = parseFloat(cellsperlake.toFixed(3))
 };
 
 
@@ -114,6 +287,25 @@ function minCounter1(){
         return false
     }
     totalcount1.innerHTML = parseInt(counter_num) - 1
+    tbl1.innerHTML = parseInt(counter_num) - 1
+    var rows = parseFloat(document.getElementById("text10").value)
+    var percslide = parseFloat(rows / 20) 
+    var gradcylinder = parseFloat(document.getElementById("text7").value)
+    var literconv = parseFloat(1000)
+    var gradcylinderliter = parseFloat(gradcylinder / literconv)
+    var cellsperslide = parseFloat(tbl1.innerHTML / percslide) //5 counted rows x 4 = total of 20 rows per slide
+    var chambervol = parseFloat(0.001)//1 ml = 0.001 L
+    var propcounted = parseFloat(chambervol / gradcylinderliter)
+    var cellspersample = parseFloat(cellsperslide / propcounted)
+    var diameter = parseFloat(document.getElementById("text9").value)
+    var depth = parseFloat(document.getElementById("text8").value)
+    var r = parseFloat(diameter/2)
+    var lakewaterm3 = parseFloat(Math.PI * r^2 * depth)//Volume cylinder = pi*r^2*h
+    var lakewaterL = parseFloat(lakewaterm3 * 1000)
+    var cellsperlake = parseFloat(cellspersample/lakewaterL)
+    tbl1b.innerHTML = parseFloat(cellsperslide.toFixed(3))
+    tbl1c.innerHTML = parseFloat(cellsperlake.toFixed(3))
+
 };
 function minCounter2(){
     counter_num = totalcount2.innerHTML
@@ -121,6 +313,24 @@ function minCounter2(){
         return false
     }
     totalcount2.innerHTML = parseInt(counter_num) - 1
+    tbl2.innerHTML = parseInt(counter_num) - 1
+    var rows = parseFloat(document.getElementById("text10").value)
+    var percslide = parseFloat(rows / 20) 
+    var gradcylinder = parseFloat(document.getElementById("text7").value)
+    var literconv = parseFloat(1000)
+    var gradcylinderliter = parseFloat(gradcylinder / literconv)
+    var cellsperslide = parseFloat((tbl2.innerHTML) / percslide) //5 counted rows x 4 = total of 20 rows per slide
+    var chambervol = parseFloat(0.001)//1 ml = 0.001 L
+    var propcounted = parseFloat(chambervol / gradcylinderliter)
+    var cellspersample = parseFloat(cellsperslide / propcounted)
+    var diameter = parseFloat(document.getElementById("text9").value)
+    var depth = parseFloat(document.getElementById("text8").value)
+    var r = parseFloat(diameter/2)
+    var lakewaterm3 = parseFloat(Math.PI * r^2 * depth)//Volume cylinder = pi*r^2*h
+    var lakewaterL = parseFloat(lakewaterm3 * 1000)
+    var cellsperlake = parseFloat(cellspersample/lakewaterL)
+    tbl2b.innerHTML = parseFloat(cellsperslide.toFixed(3))
+    tbl2c.innerHTML = parseFloat(cellsperlake.toFixed(3))
 };
 function minCounter3(){
     counter_num = totalcount3.innerHTML
@@ -128,6 +338,24 @@ function minCounter3(){
         return false
     }
     totalcount3.innerHTML = parseInt(counter_num) - 1
+    tbl3.innerHTML = parseInt(counter_num) - 1
+    var rows = parseFloat(document.getElementById("text10").value)
+    var percslide = parseFloat(rows / 20) 
+    var gradcylinder = parseFloat(document.getElementById("text7").value)
+    var literconv = parseFloat(1000)
+    var gradcylinderliter = parseFloat(gradcylinder / literconv)
+    var cellsperslide = parseFloat((tbl3.innerHTML) / percslide) //5 counted rows x 4 = total of 20 rows per slide
+    var chambervol = parseFloat(0.001)//1 ml = 0.001 L
+    var propcounted = parseFloat(chambervol / gradcylinderliter)
+    var cellspersample = parseFloat(cellsperslide / propcounted)
+    var diameter = parseFloat(document.getElementById("text9").value)
+    var depth = parseFloat(document.getElementById("text8").value)
+    var r = parseFloat(diameter/2)
+    var lakewaterm3 = parseFloat(Math.PI * r^2 * depth)//Volume cylinder = pi*r^2*h
+    var lakewaterL = parseFloat(lakewaterm3 * 1000)
+    var cellsperlake = parseFloat(cellspersample/lakewaterL)
+    tbl3b.innerHTML = parseFloat(cellsperslide.toFixed(3))
+    tbl3c.innerHTML = parseFloat(cellsperlake.toFixed(3))
 };
 function minCounter4(){
     counter_num = totalcount4.innerHTML
@@ -135,6 +363,24 @@ function minCounter4(){
         return false
     }
     totalcount4.innerHTML = parseInt(counter_num) - 1
+    tbl4.innerHTML = parseInt(counter_num) - 1
+    var rows = parseFloat(document.getElementById("text10").value)
+    var percslide = parseFloat(rows / 20) 
+    var gradcylinder = parseFloat(document.getElementById("text7").value)
+    var literconv = parseFloat(1000)
+    var gradcylinderliter = parseFloat(gradcylinder / literconv)
+    var cellsperslide = parseFloat((tbl4.innerHTML) / percslide) //5 counted rows x 4 = total of 20 rows per slide
+    var chambervol = parseFloat(0.001)//1 ml = 0.001 L
+    var propcounted = parseFloat(chambervol / gradcylinderliter)
+    var cellspersample = parseFloat(cellsperslide / propcounted)
+    var diameter = parseFloat(document.getElementById("text9").value)
+    var depth = parseFloat(document.getElementById("text8").value)
+    var r = parseFloat(diameter/2)
+    var lakewaterm3 = parseFloat(Math.PI * r^2 * depth)//Volume cylinder = pi*r^2*h
+    var lakewaterL = parseFloat(lakewaterm3 * 1000)
+    var cellsperlake = parseFloat(cellspersample/lakewaterL)
+    tbl4b.innerHTML = parseFloat(cellsperslide.toFixed(3))
+    tbl4c.innerHTML = parseFloat(cellsperlake.toFixed(3))
 };
 function minCounter5(){
     counter_num = totalcount5.innerHTML
@@ -142,6 +388,24 @@ function minCounter5(){
         return false
     }
     totalcount5.innerHTML = parseInt(counter_num) - 1
+    tbl5.innerHTML = parseInt(counter_num) - 1
+    var rows = parseFloat(document.getElementById("text10").value)
+    var percslide = parseFloat(rows / 20) 
+    var gradcylinder = parseFloat(document.getElementById("text7").value)
+    var literconv = parseFloat(1000)
+    var gradcylinderliter = parseFloat(gradcylinder / literconv)
+    var cellsperslide = parseFloat((tbl5.innerHTML) / percslide) //5 counted rows x 4 = total of 20 rows per slide
+    var chambervol = parseFloat(0.001)//1 ml = 0.001 L
+    var propcounted = parseFloat(chambervol / gradcylinderliter)
+    var cellspersample = parseFloat(cellsperslide / propcounted)
+    var diameter = parseFloat(document.getElementById("text9").value)
+    var depth = parseFloat(document.getElementById("text8").value)
+    var r = parseFloat(diameter/2)
+    var lakewaterm3 = parseFloat(Math.PI * r^2 * depth)//Volume cylinder = pi*r^2*h
+    var lakewaterL = parseFloat(lakewaterm3 * 1000)
+    var cellsperlake = parseFloat(cellspersample/lakewaterL)
+    tbl5b.innerHTML = parseFloat(cellsperslide.toFixed(3))
+    tbl5c.innerHTML = parseFloat(cellsperlake.toFixed(3))
 };
 function minCounter6(){
     counter_num = totalcount6.innerHTML
@@ -149,6 +413,24 @@ function minCounter6(){
         return false
     }
     totalcount6.innerHTML = parseInt(counter_num) - 1
+    tbl6.innerHTML = parseInt(counter_num) - 1
+    var rows = parseFloat(document.getElementById("text10").value)
+    var percslide = parseFloat(rows / 20) 
+    var gradcylinder = parseFloat(document.getElementById("text7").value)
+    var literconv = parseFloat(1000)
+    var gradcylinderliter = parseFloat(gradcylinder / literconv)
+    var cellsperslide = parseFloat((tbl6.innerHTML) / percslide) //5 counted rows x 4 = total of 20 rows per slide
+    var chambervol = parseFloat(0.001)//1 ml = 0.001 L
+    var propcounted = parseFloat(chambervol / gradcylinderliter)
+    var cellspersample = parseFloat(cellsperslide / propcounted)
+    var diameter = parseFloat(document.getElementById("text9").value)
+    var depth = parseFloat(document.getElementById("text8").value)
+    var r = parseFloat(diameter/2)
+    var lakewaterm3 = parseFloat(Math.PI * r^2 * depth)//Volume cylinder = pi*r^2*h
+    var lakewaterL = parseFloat(lakewaterm3 * 1000)
+    var cellsperlake = parseFloat(cellspersample/lakewaterL)
+    tbl6b.innerHTML = parseFloat(cellsperslide.toFixed(3))
+    tbl6c.innerHTML = parseFloat(cellsperlake.toFixed(3))
 };
 function minCounter7(){
     counter_num = totalcount7.innerHTML
@@ -156,6 +438,24 @@ function minCounter7(){
         return false
     }
     totalcount7.innerHTML = parseInt(counter_num) - 1
+    tbl7.innerHTML = parseInt(counter_num) - 1
+    var rows = parseFloat(document.getElementById("text10").value)
+    var percslide = parseFloat(rows / 20) 
+    var gradcylinder = parseFloat(document.getElementById("text7").value)
+    var literconv = parseFloat(1000)
+    var gradcylinderliter = parseFloat(gradcylinder / literconv)
+    var cellsperslide = parseFloat((tbl7.innerHTML) / percslide) //5 counted rows x 4 = total of 20 rows per slide
+    var chambervol = parseFloat(0.001)//1 ml = 0.001 L
+    var propcounted = parseFloat(chambervol / gradcylinderliter)
+    var cellspersample = parseFloat(cellsperslide / propcounted)
+    var diameter = parseFloat(document.getElementById("text9").value)
+    var depth = parseFloat(document.getElementById("text8").value)
+    var r = parseFloat(diameter/2)
+    var lakewaterm3 = parseFloat(Math.PI * r^2 * depth)//Volume cylinder = pi*r^2*h
+    var lakewaterL = parseFloat(lakewaterm3 * 1000)
+    var cellsperlake = parseFloat(cellspersample/lakewaterL)
+    tbl7b.innerHTML = parseFloat(cellsperslide.toFixed(3))
+    tbl7c.innerHTML = parseFloat(cellsperlake.toFixed(3))
 };
 function minCounter8(){
     counter_num = totalcount8.innerHTML
@@ -163,6 +463,24 @@ function minCounter8(){
         return false
     }
     totalcount8.innerHTML = parseInt(counter_num) - 1
+    tbl8.innerHTML = parseInt(counter_num) - 1
+    var rows = parseFloat(document.getElementById("text10").value)
+    var percslide = parseFloat(rows / 20) 
+    var gradcylinder = parseFloat(document.getElementById("text7").value)
+    var literconv = parseFloat(1000)
+    var gradcylinderliter = parseFloat(gradcylinder / literconv)
+    var cellsperslide = parseFloat((tbl8.innerHTML) / percslide) //5 counted rows x 4 = total of 20 rows per slide
+    var chambervol = parseFloat(0.001)//1 ml = 0.001 L
+    var propcounted = parseFloat(chambervol / gradcylinderliter)
+    var cellspersample = parseFloat(cellsperslide / propcounted)
+    var diameter = parseFloat(document.getElementById("text9").value)
+    var depth = parseFloat(document.getElementById("text8").value)
+    var r = parseFloat(diameter/2)
+    var lakewaterm3 = parseFloat(Math.PI * r^2 * depth)//Volume cylinder = pi*r^2*h
+    var lakewaterL = parseFloat(lakewaterm3 * 1000)
+    var cellsperlake = parseFloat(cellspersample/lakewaterL)
+    tbl8b.innerHTML = parseFloat(cellsperslide.toFixed(3))
+    tbl8c.innerHTML = parseFloat(cellsperlake.toFixed(3))
 };
 
 
@@ -185,6 +503,22 @@ function resetCounter(){
     tbl6.innerHTML = 0;
     tbl7.innerHTML = 0;
     tbl8.innerHTML = 0;
+    tbl1b.innerHTML = 0;
+    tbl2b.innerHTML = 0;
+    tbl3b.innerHTML = 0;
+    tbl4b.innerHTML = 0;
+    tbl5b.innerHTML = 0;
+    tbl6b.innerHTML = 0;
+    tbl7b.innerHTML = 0;
+    tbl8b.innerHTML = 0;
+    tbl1c.innerHTML = 0;
+    tbl2c.innerHTML = 0;
+    tbl3c.innerHTML = 0;
+    tbl4c.innerHTML = 0;
+    tbl5c.innerHTML = 0;
+    tbl6c.innerHTML = 0;
+    tbl7c.innerHTML = 0;
+    tbl8c.innerHTML = 0;
         console.log('Counters have been reset.');
       } else {
         // Do nothing!
@@ -259,7 +593,14 @@ const out3 = document.getElementById('output3');
 const out4 = document.getElementById('output4');
 const out5 = document.getElementById('output5');
 const out6 = document.getElementById('output6');
+const out7 = document.getElementById('output7');
+const out8 = document.getElementById('output8');
+const out9 = document.getElementById('output9');
+const out10 = document.getElementById('output10');
+const out11 = document.getElementById('output11');
 const outalert = document.getElementById('outalert');
+
+
 
 function fn1(){
     str1 = document.getElementById('text1').value;
@@ -268,11 +609,24 @@ function fn1(){
     str4 = document.getElementById('text4').value;
     str5 = document.getElementById('text5').value;
     str6 = document.getElementById('text6').value;
+    str7 = document.getElementById('text7').value;
+    str8 = document.getElementById('text8').value;
+    str9 = document.getElementById('text9').value;
+    str10 = document.getElementById('text10').value;
+    str11 = document.getElementById('text11').value;
+    gradcylinder = document.getElementById('')
     out1.innerHTML = str1;
     out2.innerHTML = str2;
     out3.innerHTML = str3;
     out4.innerHTML = str4;
     out5.innerHTML = str5;
     out6.innerHTML = str6;
+    out7.innerHTML = str7;
+    out8.innerHTML = str8;
+    out9.innerHTML = str9;
+    out10.innerHTML = str10;
+    out11.innerHTML = str11;
     outalert.innerHTML = "Info submitted";
 }
+
+
