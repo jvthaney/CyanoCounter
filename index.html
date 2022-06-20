@@ -13,7 +13,7 @@
 <body class="jumbotron">
     <div class="navheader">
         <nav class="navbar-light bg-dark navbar-expand-lg fixed-top">
-          <a class="navbar-brand" href="#">Sunapee Cyano Counter</a>
+          <a class="navbar-brand" href="#">CyanoCounter</a>
           <li style="float:right" ><a class="active" href="https://github.com/jvthaney/cyanocounter/blob/main/README.md" target="_blank">Full instructions</a></li>
         </nav>
       </div>
@@ -82,6 +82,8 @@
                     <div class="counter-icon">
                         <i class="fa fa-globe"></i>
                     </div>
+                    <button type="button" id="myImg1" class="btn btn-light view">View</button>
+                    <br>
                     <button class="btn add mx-10 mt-10 add1">+</button>
                     <button class="btn add mx-10 mt-10 min1">-</button>
                     <h3>Microcystis</h3>
@@ -93,6 +95,8 @@
                     <div class="counter-icon">
                         <i class="fa fa-rocket"></i>
                     </div>
+                    <button type="button" id="myImg2" class="btn btn-light view">View</button>
+                    <br>
                     <button class="btn add mx-10 mt-10 add2">+</button>
                     <button class="btn add mx-10 mt-10 min2">-</button>
                     <h3>Dolichospermum</h3>
@@ -104,6 +108,8 @@
                     <div class="counter-icon">
                         <i class="fa fa-rocket"></i>
                     </div>
+                    <button type="button" id="myImg3" class="btn btn-light view">View</button>
+                    <br>
                     <button class="btn add mx-10 mt-10 add3">+</button>
                     <button class="btn add mx-10 mt-10 min3">-</button>
                     <h3>Gloeotrichia</h3>
@@ -115,6 +121,8 @@
                     <div class="counter-icon">
                         <i class="fa fa-rocket"></i>
                     </div>
+                    <button type="button" id="myImg4" class="btn btn-light view">View</button>
+                    <br>
                     <button class="btn add mx-10 mt-10 add4">+</button>
                     <button class="btn add mx-10 mt-10 min4">-</button>
                     <h3>Chroococcus</h3>
@@ -130,9 +138,11 @@
                     <div class="counter-icon">
                         <i class="fa fa-rocket"></i>
                     </div>
+                    <button type="button" id="myImg5" class="btn btn-light view">View</button>
+                    <br>
                     <button class="btn add mx-10 mt-10 add5">+</button>
                     <button class="btn add mx-10 mt-10 min5">-</button>
-                    <h3>Coelosphaerium</h3>
+                    <h3>Coelosphaerium/Woronochinia</h3>
                     <span class="totalcount5 counter-value">0</span>
                 </div>
             </div>
@@ -141,6 +151,8 @@
                     <div class="counter-icon">
                         <i class="fa fa-rocket"></i>
                     </div>
+                    <button type="button" id="myImg6" class="btn btn-light view">View</button>
+                    <br>
                     <button class="btn add mx-10 mt-10 add6">+</button>
                     <button class="btn add mx-10 mt-10 min6">-</button>
                     <h3>Aphanocapsa</h3>
@@ -152,9 +164,11 @@
                     <div class="counter-icon">
                         <i class="fa fa-rocket"></i>
                     </div>
+                    <button type="button" id="myImg7" class="btn btn-light view">View</button>
+                    <br>
                     <button class="btn add mx-10 mt-10 add7">+</button>
                     <button class="btn add mx-10 mt-10 min7">-</button>
-                    <h3>Woronichinia</h3>
+                    <h3>Merismopedia</h3>
                     <span class="totalcount7 counter-value">0</span>
                 </div>
             </div>
@@ -163,13 +177,14 @@
                     <div class="counter-icon">
                         <i class="fa fa-rocket"></i>
                     </div>
+                    <button type="button" id="myImg8" class="btn btn-light view">View</button>
+                    <br>
                     <button class="btn add mx-10 mt-10 add8">+</button>
                     <button class="btn add mx-10 mt-10 min8">-</button>
                     <h3>Oscillatoria</h3>
                     <span class="totalcount8 counter-value">0</span>
                 </div>
             </div>
-
         </div>
     </div>
     <br><br>
@@ -213,8 +228,8 @@
             <tr>
                 <th>Cyanobacteria</th>
                 <th>Count</th>
-                <th>Cells/slide</th>
-                <th>Cells/L</th>
+                <th>Colonies/slide</th>
+                <th>Colonies/L</th>
             </tr>
             <tr>
                 <td>Microcystis</td>
@@ -241,7 +256,7 @@
                 <td class="tbl4c" id="tbl4c">0</td>
             </tr>
             <tr>
-                <td>Coelosphaerium</td>
+                <td>Coelosph/Woron</td>
                 <td class="tbl5">0</td>
                 <td class="tbl5b" id="tbl5b">0</td>
                 <td class="tbl5c" id="tbl5c">0</td>
@@ -253,7 +268,7 @@
                 <td class="tbl6c" id="tbl6c">0</td>
             </tr>
             <tr>
-                <td>Woronichinia</td>
+                <td>Merismopedia</td>
                 <td class="tbl7 counter-value">0</td>
                 <td class="tbl7b counter-value" id="tbl7b">0</td>
                 <td class="tbl7c" id="tbl7c">0</td>
@@ -266,6 +281,52 @@
             </tr>
         </table>
         <br>
+
+<!-- Trigger the Modal -->
+<!-- <img id="myImg" src="MCimages.jpg" alt="Snow" style="width:100%;max-width:300px"> -->
+                    <!-- The Modal -->
+                    <div id="myModal1" class="modal modal1"><!-- The Close Button -->
+                        <span class="close close1">&times;</span><!-- Modal Content (The Image) -->
+                        <img class="modal-content" id="img01 myImg1" src="MCimages.jpg"><!-- Modal Caption (Image Text) -->
+                        <div id="caption1"></div>
+                    </div>
+                    <div id="myModal2" class="modal modal2">
+                        <span class="close close2">&times;</span>
+                        <img class="modal-content" id="img02 myImg2" src="DOLimages.jpg">
+                        <div id="caption2"></div>
+                    </div>
+                    <div id="myModal3" class="modal modal3">
+                        <span class="close close3">&times;</span>
+                        <img class="modal-content" id="img03 myImg3" src="GLOEOimages.jpg">
+                        <div id="caption3"></div>
+                    </div>
+                    <div id="myModal4" class="modal modal4">
+                        <span class="close close4">&times;</span>
+                        <img class="modal-content" id="img04 myImg4" src="CHROOimages.jpg">
+                        <div id="caption4"></div>
+                    </div>
+                    <div id="myModal5" class="modal modal5">
+                        <span class="close close5">&times;</span>
+                        <img class="modal-content" id="img05 myImg5" src="COEL_WOROimages.jpg">
+                        <div id="caption5"></div>
+                    </div>
+                    <div id="myModal6" class="modal modal6">
+                        <span class="close close6">&times;</span>
+                        <img class="modal-content" id="img06 myImg6" src="APHANimages.jpg">
+                        <div id="caption6"></div>
+                    </div>
+                    <div id="myModal7" class="modal modal7">
+                        <span class="close close7">&times;</span>
+                        <img class="modal-content" id="img07 myImg7" src="MERISimages.jpg">
+                        <div id="caption7"></div>
+                    </div>
+                    <div id="myModal8" class="modal modal8">
+                        <span class="close close8">&times;</span>
+                        <img class="modal-content" id="img08 myImg8" src="OSCimages.jpg">
+                        <div id="caption8"></div>
+                    </div>
+
+
     <script src="main.js"></script>
     
 </body>
