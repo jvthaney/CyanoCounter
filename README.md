@@ -12,7 +12,7 @@ This counter is a user-friendly tool designed to assist community scientists in 
 - The sample volume is used in combination with a volume of 1 mL for the Sedgewick Rafter cell to estimate the number of cells/colonies per sample
 - The net ring size and depth inputs are used to calculate the volume of lake water sampled
 
-**4.** Enter any additional notes that might be helpful (e.g., notes about location, weather conditions, visible bloom etc.)
+**4.** Enter any additional notes that might be helpful (e.g., notes about location, weather conditions, visible bloom, other taxa observed, etc.)
 
 **5.** Click **"Submit Info"** to log this information. You can go back and change these answers at any time, just make sure you click Submit Info again to log any changes you make.
 
