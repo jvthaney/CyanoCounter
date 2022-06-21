@@ -107,6 +107,8 @@ min6.addEventListener('click', rel);
 min7.addEventListener('click', rel);
 min8.addEventListener('click', rel);
 
+
+
 reset.addEventListener('click', resetCounter);
 exp.addEventListener('click', tableToCSV);
 
@@ -437,7 +439,7 @@ const outalert = document.getElementById('outalert');
 
 
 
-function fn1(){
+function fn1(){ //called in html using "onclick=" in the button 
     str1 = document.getElementById('text1').value;
     str2 = document.getElementById('text2').value;
     str3 = document.getElementById('text3').value;
@@ -449,7 +451,6 @@ function fn1(){
     str9 = document.getElementById('text9').value;
     str10 = document.getElementById('text10').value;
     str11 = document.getElementById('text11').value;
-    gradcylinder = document.getElementById('')
     out1.innerHTML = str1;
     out2.innerHTML = str2;
     out3.innerHTML = str3;
