@@ -9,7 +9,7 @@ This counter is a user-friendly tool designed to assist community scientists in 
 
 **3.** Next, enter the **volume** of your net sample (measured in the graduated cylinder). You can leave the default values for **depth**, **net diameter**, and **rows** **counted**, _**unless**_ you sampled a different depth, used a non-LSPA plankton net, or counted more or less than 5 rows on the slide. 
 - The # rows is used to esimate the proportion of the slide you have counted (20 rows total)
-- The sample volume input is used in combination with a volume of 1 mL for the Sedgewick Rafter cell to estimate the number of cells/colonies per sample
+- The sample volume is used in combination with a volume of 1 mL for the Sedgewick Rafter cell to estimate the number of cells/colonies per sample
 - The net ring size and depth inputs are used to calculate the volume of lake water sampled
 
 **4.** Enter any additional notes that might be helpful (e.g., notes about location, weather conditions, visible bloom etc.)
