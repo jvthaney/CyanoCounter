@@ -21,7 +21,7 @@
     <div class="navheader">
         <nav class="navbar-light bg-dark navbar-expand-lg fixed-top">
           <a class="navbar-brand" href="#">CyanoCounter</a>
-          <li style="float:right" ><a class="active" href="https://github.com/jvthaney/cyanocounter/blob/main/README.md" target="_blank">Full instructions</a></li>
+          <li style="float:right" class="banner" ><a class="active" href="https://github.com/jvthaney/cyanocounter/blob/main/README.md" target="_blank">Full instructions</a></li>
         </nav>
       </div>
       <form class="row g-3 first">
@@ -76,9 +76,17 @@
 
 
           <div class="container second">
-              <p class="instructions">1. Fill out the information above and click <b>"Submit Info"</b> to save this information.</p>
-              <p class="instructions">2. As you move across your slide, use the counters below to keep track of the #cells/colonies you encounter.</p>
-              <p class="instructions2">3. When you are done counting your 5 random rows, click <b>"Export data"</b> to download the count data to the computer.</p>
+            <ul>
+              <li class="instructions no-bullet">1. Enter your information in the boxes above and click <b>"Submit Info"</b> to log it.</li>
+              <li class="instructions no-bullet">2. As you move across your slide, use the counters below to keep track of the #cells/colonies you encounter of each type of cyanobacteria.</li>
+              <ul>
+                <li class="instructions">Aim to count 5 random rows of your slide - if you count more or less than 5 rows, please change the number of rows in the box above to 
+                adjust the calculations </li>
+                <li class="instructions">You can preview the data at any time at the bottom of the page</li>
+            </ul>
+              <li class="instructions no-bullet">3. When you are done counting, click <b>"Export data"</b> to download the count data 
+                as a .CSV file to the computer.</li>
+            </ul>
           </div>
     </form>
     <hr>
