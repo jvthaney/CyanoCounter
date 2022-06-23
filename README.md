@@ -18,7 +18,7 @@ This counter is a user-friendly tool designed to assist community scientists in 
 
 ![inputboxes](https://user-images.githubusercontent.com/70969187/174131040-e9e6d6d9-c017-48db-9ad5-9ea27743aab0.jpg)
 
-**4.** Now you're ready to count. As you move across your slide, use the counters to keep track of the number of each type of cyanobacteria you encounter. Remember to count all cells/colonies from **5 random rows** on the slide. 
+**4.** Now you're ready to count. As you move across your slide, use the counters to keep track of the number of each type of cyanobacteria you encounter. Remember to count all cells/colonies from 5 random rows on the slide. 
 - Use the **+** button to increase the number, and the **-** button to decrease the count
 - The total number of each cyanobacteria counted is displayed at the bottom of each colored box
 - If you need to reset the counters at any time, just click the "**Reset counters**" button
