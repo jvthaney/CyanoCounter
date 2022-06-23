@@ -30,5 +30,5 @@ This counter is a user-friendly tool designed to assist community scientists in 
 - The filename will automatically be set as your name and the date
 - A real-time preview of the count data is always shown beneath the counters (bottom of page)
 
-![previews](https://user-images.githubusercontent.com/70969187/174134389-1a8eafbb-be02-434a-9d44-dfb7cb5c20e3.jpg)
+![previews](https://user-images.githubusercontent.com/70969187/175312583-ae56c976-11f3-4052-8db4-45efced83cb8.jpg)
 
