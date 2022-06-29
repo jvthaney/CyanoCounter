@@ -7,6 +7,15 @@ let add5 = document.querySelector(".add5");
 let add6 = document.querySelector(".add6");
 let add7 = document.querySelector(".add7");
 let add8 = document.querySelector(".add8");
+let add9 = document.querySelector(".add9");
+let add10 = document.querySelector(".add10");
+let add11 = document.querySelector(".add11");
+let add12 = document.querySelector(".add12");
+let add13 = document.querySelector(".add13");
+let add14 = document.querySelector(".add14");
+let add15 = document.querySelector(".add15");
+let add16 = document.querySelector(".add16");
+
 //Substract buttons:
 let min1 = document.querySelector(".min1");
 let min2 = document.querySelector(".min2");
@@ -16,6 +25,15 @@ let min5 = document.querySelector(".min5");
 let min6 = document.querySelector(".min6");
 let min7 = document.querySelector(".min7");
 let min8 = document.querySelector(".min8");
+let min9 = document.querySelector(".min9");
+let min10 = document.querySelector(".min10");
+let min11 = document.querySelector(".min11");
+let min12 = document.querySelector(".min12");
+let min13 = document.querySelector(".min13");
+let min14 = document.querySelector(".min14");
+let min15 = document.querySelector(".min15");
+let min16 = document.querySelector(".min16");
+
 //Number displayed in each counter:
 let totalcount1 = document.querySelector(".totalcount1");
 let totalcount2 = document.querySelector(".totalcount2");
@@ -25,6 +43,17 @@ let totalcount5 = document.querySelector(".totalcount5");
 let totalcount6 = document.querySelector(".totalcount6");
 let totalcount7 = document.querySelector(".totalcount7");
 let totalcount8 = document.querySelector(".totalcount8");
+let totalcount9 = document.querySelector(".totalcount9");
+let totalcount10 = document.querySelector(".totalcount10");
+let totalcount11 = document.querySelector(".totalcount11");
+let totalcount12 = document.querySelector(".totalcount12");
+let totalcount13 = document.querySelector(".totalcount13");
+let totalcount14 = document.querySelector(".totalcount14");
+let totalcount15 = document.querySelector(".totalcount15");
+let totalcount16 = document.querySelector(".totalcount16");
+
+let numbercounters = document.querySelector(".numbercounters");
+
 //Columns in data table:
 let tbl1 = document.querySelector(".tbl1");//Counts
 let tbl2 = document.querySelector(".tbl2");
@@ -34,6 +63,15 @@ let tbl5 = document.querySelector(".tbl5");
 let tbl6 = document.querySelector(".tbl6");
 let tbl7 = document.querySelector(".tbl7");
 let tbl8 = document.querySelector(".tbl8");
+let tbl9 = document.querySelector(".tbl9");
+let tbl10 = document.querySelector(".tbl10");
+let tbl11 = document.querySelector(".tbl11");
+let tbl12 = document.querySelector(".tbl12");
+let tbl13 = document.querySelector(".tbl13");
+let tbl14 = document.querySelector(".tbl14");
+let tbl15 = document.querySelector(".tbl15");
+let tbl16 = document.querySelector(".tbl16");
+
 let tbl1b = document.querySelector(".tbl1b");//Colonies/slide
 let tbl2b = document.querySelector(".tbl2b");
 let tbl3b = document.querySelector(".tbl3b");
@@ -42,6 +80,15 @@ let tbl5b = document.querySelector(".tbl5b");
 let tbl6b = document.querySelector(".tbl6b");
 let tbl7b = document.querySelector(".tbl7b");
 let tbl8b = document.querySelector(".tbl8b");
+let tbl9b = document.querySelector(".tbl9b");
+let tbl10b = document.querySelector(".tbl10b");
+let tbl11b = document.querySelector(".tbl11b");
+let tbl12b = document.querySelector(".tbl12b");
+let tbl13b = document.querySelector(".tbl13b");
+let tbl14b = document.querySelector(".tbl14b");
+let tbl15b = document.querySelector(".tbl15b");
+let tbl16b = document.querySelector(".tbl16b");
+
 let tbl1c = document.querySelector(".tbl1c");//Colonies/L
 let tbl2c = document.querySelector(".tbl2c");
 let tbl3c = document.querySelector(".tbl3c");
@@ -50,6 +97,15 @@ let tbl5c = document.querySelector(".tbl5c");
 let tbl6c = document.querySelector(".tbl6c");
 let tbl7c = document.querySelector(".tbl7c");
 let tbl8c = document.querySelector(".tbl8c");
+let tbl9c = document.querySelector(".tbl9c");
+let tbl10c = document.querySelector(".tbl10c");
+let tbl11c = document.querySelector(".tbl11c");
+let tbl12c = document.querySelector(".tbl12c");
+let tbl13c = document.querySelector(".tbl13c");
+let tbl14c = document.querySelector(".tbl14c");
+let tbl15c = document.querySelector(".tbl15c");
+let tbl16c = document.querySelector(".tbl16c");
+
 let tbl1d = document.querySelector(".tbl1d");//Relative abundance (%)
 let tbl2d = document.querySelector(".tbl2d");
 let tbl3d = document.querySelector(".tbl3d");
@@ -58,6 +114,15 @@ let tbl5d = document.querySelector(".tbl5d");
 let tbl6d = document.querySelector(".tbl6d");
 let tbl7d = document.querySelector(".tbl7d");
 let tbl8d = document.querySelector(".tbl8d");
+let tbl9d = document.querySelector(".tbl9d");
+let tbl10d = document.querySelector(".tbl10d");
+let tbl11d = document.querySelector(".tbl11d");
+let tbl12d = document.querySelector(".tbl12d");
+let tbl13d = document.querySelector(".tbl13d");
+let tbl14d = document.querySelector(".tbl14d");
+let tbl15d = document.querySelector(".tbl15d");
+let tbl16d = document.querySelector(".tbl16d");
+
 let reset = document.querySelector(".reset");
 let exp = document.querySelector(".exp");
 
@@ -78,6 +143,14 @@ add5.addEventListener('click', addCounter5);
 add6.addEventListener('click', addCounter6);
 add7.addEventListener('click', addCounter7);
 add8.addEventListener('click', addCounter8);
+add9.addEventListener('click', addCounter9);
+add10.addEventListener('click', addCounter10);
+add11.addEventListener('click', addCounter11);
+add12.addEventListener('click', addCounter12);
+add13.addEventListener('click', addCounter13);
+add14.addEventListener('click', addCounter14);
+add15.addEventListener('click', addCounter15);
+add16.addEventListener('click', addCounter16);
 
 min1.addEventListener('click', minCounter1);
 min2.addEventListener('click', minCounter2);
@@ -87,6 +160,14 @@ min5.addEventListener('click', minCounter5);
 min6.addEventListener('click', minCounter6);
 min7.addEventListener('click', minCounter7);
 min8.addEventListener('click', minCounter8);
+min9.addEventListener('click', minCounter9);
+min10.addEventListener('click', minCounter10);
+min11.addEventListener('click', minCounter11);
+min12.addEventListener('click', minCounter12);
+min13.addEventListener('click', minCounter13);
+min14.addEventListener('click', minCounter14);
+min15.addEventListener('click', minCounter15);
+min16.addEventListener('click', minCounter16);
 
 //Add function for calculating relative abundance
 add1.addEventListener('click', rel);
@@ -97,6 +178,14 @@ add5.addEventListener('click', rel);
 add6.addEventListener('click', rel);
 add7.addEventListener('click', rel);
 add8.addEventListener('click', rel);
+add9.addEventListener('click', rel);
+add10.addEventListener('click', rel);
+add11.addEventListener('click', rel);
+add12.addEventListener('click', rel);
+add13.addEventListener('click', rel);
+add14.addEventListener('click', rel);
+add15.addEventListener('click', rel);
+add16.addEventListener('click', rel);
 
 min1.addEventListener('click', rel);
 min2.addEventListener('click', rel);
@@ -106,8 +195,14 @@ min5.addEventListener('click', rel);
 min6.addEventListener('click', rel);
 min7.addEventListener('click', rel);
 min8.addEventListener('click', rel);
-
-
+min9.addEventListener('click', rel);
+min10.addEventListener('click', rel);
+min11.addEventListener('click', rel);
+min12.addEventListener('click', rel);
+min13.addEventListener('click', rel);
+min14.addEventListener('click', rel);
+min15.addEventListener('click', rel);
+min16.addEventListener('click', rel);
 
 reset.addEventListener('click', resetCounter);
 exp.addEventListener('click', tableToCSV);
@@ -122,8 +217,16 @@ function rel(){
     c6 = totalcount6.innerHTML
     c7 = totalcount7.innerHTML
     c8 = totalcount8.innerHTML
+    c9 = totalcount9.innerHTML
+    c10 = totalcount10.innerHTML
+    c11 = totalcount11.innerHTML
+    c12 = totalcount12.innerHTML
+    c13 = totalcount13.innerHTML
+    c14 = totalcount14.innerHTML
+    c15 = totalcount15.innerHTML
+    c16 = totalcount16.innerHTML
 
-    var totabundance = parseInt(c1)+parseInt(c2)+parseInt(c3)+parseInt(c4)+parseInt(c5)+parseInt(c6)+parseInt(c7)+parseInt(c8)//total cells counted of all taxa
+    var totabundance = parseInt(c1)+parseInt(c2)+parseInt(c3)+parseInt(c4)+parseInt(c5)+parseInt(c6)+parseInt(c7)+parseInt(c8)+parseInt(c9)+parseInt(c10)+parseInt(c11)+parseInt(c12)+parseInt(c13)+parseInt(c14)+parseInt(c15)+parseInt(c16);//total cells counted of all taxa
     
     var r1 = parseFloat((c1/totabundance)*100)//relative abundance of each type
     var r2 = parseFloat((c2/totabundance)*100)
@@ -133,6 +236,14 @@ function rel(){
     var r6 = parseFloat((c6/totabundance)*100)
     var r7 = parseFloat((c7/totabundance)*100)
     var r8 = parseFloat((c8/totabundance)*100)
+    var r9 = parseFloat((c9/totabundance)*100)
+    var r10 = parseFloat((c10/totabundance)*100)
+    var r11 = parseFloat((c11/totabundance)*100)
+    var r12 = parseFloat((c12/totabundance)*100)
+    var r13 = parseFloat((c13/totabundance)*100)
+    var r14 = parseFloat((c14/totabundance)*100)
+    var r15 = parseFloat((c15/totabundance)*100)
+    var r16 = parseFloat((c16/totabundance)*100)
     
     tbl1d.innerHTML = parseFloat(r1.toFixed(1))//insert relative abundance in column "d" of table
     tbl2d.innerHTML = parseFloat(r2.toFixed(1))
@@ -142,6 +253,14 @@ function rel(){
     tbl6d.innerHTML = parseFloat(r6.toFixed(1))
     tbl7d.innerHTML = parseFloat(r7.toFixed(1))
     tbl8d.innerHTML = parseFloat(r8.toFixed(1))
+    tbl9d.innerHTML = parseFloat(r9.toFixed(1))
+    tbl10d.innerHTML = parseFloat(r10.toFixed(1))
+    tbl11d.innerHTML = parseFloat(r11.toFixed(1))
+    tbl12d.innerHTML = parseFloat(r12.toFixed(1))
+    tbl13d.innerHTML = parseFloat(r13.toFixed(1))
+    tbl14d.innerHTML = parseFloat(r14.toFixed(1))
+    tbl15d.innerHTML = parseFloat(r15.toFixed(1))
+    tbl16d.innerHTML = parseFloat(r16.toFixed(1))
 
     var rows = parseFloat(document.getElementById("text10").value)//#rows coutned by user
     var percslide = parseFloat(rows / 20) //percent of slide counted based on number of rows
@@ -157,6 +276,14 @@ function rel(){
     var cps6 = parseFloat(c6/percslide) 
     var cps7 = parseFloat(c7/percslide) 
     var cps8 = parseFloat(c8/percslide) 
+    var cps9 = parseFloat(c9/percslide)
+    var cps10 = parseFloat(c10/percslide)
+    var cps11 = parseFloat(c11/percslide)
+    var cps12 = parseFloat(c12/percslide)
+    var cps13 = parseFloat(c13/percslide)
+    var cps14 = parseFloat(c14/percslide)
+    var cps15 = parseFloat(c15/percslide)
+    var cps16 = parseFloat(c16/percslide)
 
     var chambervol = parseFloat(0.001)//1 ml = 0.001 L (Sedgewick Rafter Cell volume)
     var propcounted = parseFloat(chambervol / gradcylinderliter) //proportion volume of Sedgewick Rafter counted based on #rows counted
@@ -169,7 +296,15 @@ function rel(){
     var cpsamp6 = parseFloat(cps6 / propcounted)
     var cpsamp7 = parseFloat(cps7 / propcounted)
     var cpsamp8 = parseFloat(cps8 / propcounted)
-
+    var cpsamp9 = parseFloat(cps9 / propcounted)
+    var cpsamp10 = parseFloat(cps10 / propcounted)
+    var cpsamp11 = parseFloat(cps11 / propcounted)
+    var cpsamp12 = parseFloat(cps12 / propcounted)
+    var cpsamp13 = parseFloat(cps13 / propcounted)
+    var cpsamp14 = parseFloat(cps14 / propcounted)
+    var cpsamp15 = parseFloat(cps15 / propcounted)
+    var cpsamp16 = parseFloat(cps16 / propcounted)
+    
     var diameter = parseFloat(document.getElementById("text9").value)
     var depth = parseFloat(document.getElementById("text8").value)
     var r = parseFloat(diameter/2)
@@ -184,7 +319,15 @@ function rel(){
     var cpl6 = parseFloat(cpsamp6/lakewaterL)
     var cpl7 = parseFloat(cpsamp7/lakewaterL)
     var cpl8 = parseFloat(cpsamp8/lakewaterL)
-
+    var cpl9 = parseFloat(cpsamp9/lakewaterL)
+    var cpl10 = parseFloat(cpsamp10/lakewaterL)
+    var cpl11 = parseFloat(cpsamp11/lakewaterL)
+    var cpl12 = parseFloat(cpsamp12/lakewaterL)
+    var cpl13 = parseFloat(cpsamp13/lakewaterL)
+    var cpl14 = parseFloat(cpsamp14/lakewaterL)
+    var cpl15 = parseFloat(cpsamp15/lakewaterL)
+    var cpl16 = parseFloat(cpsamp16/lakewaterL)
+    
     tbl1b.innerHTML = parseFloat(cps1.toFixed(3))//insert cells per sample in column "b" of table
     tbl2b.innerHTML = parseFloat(cps2.toFixed(3))
     tbl3b.innerHTML = parseFloat(cps3.toFixed(3))
@@ -193,6 +336,14 @@ function rel(){
     tbl6b.innerHTML = parseFloat(cps6.toFixed(3))
     tbl7b.innerHTML = parseFloat(cps7.toFixed(3))
     tbl8b.innerHTML = parseFloat(cps8.toFixed(3))
+    tbl9b.innerHTML = parseFloat(cps9.toFixed(3))
+    tbl10b.innerHTML = parseFloat(cps10.toFixed(3))
+    tbl11b.innerHTML = parseFloat(cps11.toFixed(3))
+    tbl12b.innerHTML = parseFloat(cps12.toFixed(3))
+    tbl13b.innerHTML = parseFloat(cps13.toFixed(3))
+    tbl14b.innerHTML = parseFloat(cps14.toFixed(3))
+    tbl15b.innerHTML = parseFloat(cps15.toFixed(3))
+    tbl16b.innerHTML = parseFloat(cps16.toFixed(3))
 
     tbl1c.innerHTML = parseFloat(cpl1.toFixed(3))//insert cells per liter lake water in column "c" of table
     tbl2c.innerHTML = parseFloat(cpl2.toFixed(3))
@@ -202,7 +353,14 @@ function rel(){
     tbl6c.innerHTML = parseFloat(cpl6.toFixed(3))
     tbl7c.innerHTML = parseFloat(cpl7.toFixed(3))
     tbl8c.innerHTML = parseFloat(cpl8.toFixed(3))
-
+    tbl9c.innerHTML = parseFloat(cpl9.toFixed(3))
+    tbl10c.innerHTML = parseFloat(cpl10.toFixed(3))
+    tbl11c.innerHTML = parseFloat(cpl11.toFixed(3))
+    tbl12c.innerHTML = parseFloat(cpl12.toFixed(3))
+    tbl13c.innerHTML = parseFloat(cpl13.toFixed(3))
+    tbl14c.innerHTML = parseFloat(cpl14.toFixed(3))
+    tbl15c.innerHTML = parseFloat(cpl15.toFixed(3))
+    tbl16c.innerHTML = parseFloat(cpl16.toFixed(3))
 }
 
 //////////Add-button functions
@@ -251,7 +409,46 @@ function addCounter8(){
     totalcount8.innerHTML = parseInt(counter_num) + 1
     tbl8.innerHTML = parseInt(counter_num) + 1
 };
-
+function addCounter9(){
+    counter_num = totalcount9.innerHTML
+    totalcount9.innerHTML = parseInt(counter_num) + 1
+    tbl9.innerHTML = parseInt(counter_num) + 1
+};
+function addCounter10(){
+    counter_num = totalcount10.innerHTML
+    totalcount10.innerHTML = parseInt(counter_num) + 1
+    tbl10.innerHTML = parseInt(counter_num) + 1
+};
+function addCounter11(){
+    counter_num = totalcount11.innerHTML
+    totalcount11.innerHTML = parseInt(counter_num) + 1
+    tbl11.innerHTML = parseInt(counter_num) + 1
+};
+function addCounter12(){
+    counter_num = totalcount12.innerHTML
+    totalcount12.innerHTML = parseInt(counter_num) + 1
+    tbl12.innerHTML = parseInt(counter_num) + 1
+};
+function addCounter13(){
+    counter_num = totalcount13.innerHTML
+    totalcount13.innerHTML = parseInt(counter_num) + 1
+    tbl13.innerHTML = parseInt(counter_num) + 1
+};
+function addCounter14(){
+    counter_num = totalcount14.innerHTML
+    totalcount14.innerHTML = parseInt(counter_num) + 1
+    tbl14.innerHTML = parseInt(counter_num) + 1
+};
+function addCounter15(){
+    counter_num = totalcount15.innerHTML
+    totalcount15.innerHTML = parseInt(counter_num) + 1
+    tbl15.innerHTML = parseInt(counter_num) + 1
+};
+function addCounter16(){
+    counter_num = totalcount16.innerHTML
+    totalcount16.innerHTML = parseInt(counter_num) + 1
+    tbl16.innerHTML = parseInt(counter_num) + 1
+};
 
 ///////////Minus button functions
 function minCounter1(){
@@ -319,6 +516,71 @@ function minCounter8(){
     totalcount8.innerHTML = parseInt(counter_num) - 1
     tbl8.innerHTML = parseInt(counter_num) - 1
 };
+function minCounter9(){
+    counter_num = totalcount9.innerHTML
+    if (counter_num == 0){
+        return false
+    }
+    totalcount9.innerHTML = parseInt(counter_num) - 1
+    tbl9.innerHTML = parseInt(counter_num) - 1
+};
+function minCounter10(){
+    counter_num = totalcount10.innerHTML
+    if (counter_num == 0){
+        return false
+    }
+    totalcount10.innerHTML = parseInt(counter_num) - 1
+    tbl10.innerHTML = parseInt(counter_num) - 1
+};
+function minCounter11(){
+    counter_num = totalcount11.innerHTML
+    if (counter_num == 0){
+        return false
+    }
+    totalcount11.innerHTML = parseInt(counter_num) - 1
+    tbl11.innerHTML = parseInt(counter_num) - 1
+};
+function minCounter12(){
+    counter_num = totalcount12.innerHTML
+    if (counter_num == 0){
+        return false
+    }
+    totalcount12.innerHTML = parseInt(counter_num) - 1
+    tbl12.innerHTML = parseInt(counter_num) - 1
+};
+function minCounter13(){
+    counter_num = totalcount13.innerHTML
+    if (counter_num == 0){
+        return false
+    }
+    totalcount13.innerHTML = parseInt(counter_num) - 1
+    tbl13.innerHTML = parseInt(counter_num) - 1
+};
+function minCounter14(){
+    counter_num = totalcount14.innerHTML
+    if (counter_num == 0){
+        return false
+    }
+    totalcount14.innerHTML = parseInt(counter_num) - 1
+    tbl14.innerHTML = parseInt(counter_num) - 1
+};
+function minCounter15(){
+    counter_num = totalcount15.innerHTML
+    if (counter_num == 0){
+        return false
+    }
+    totalcount15.innerHTML = parseInt(counter_num) - 1
+    tbl15.innerHTML = parseInt(counter_num) - 1
+};
+function minCounter16(){
+    counter_num = totalcount16.innerHTML
+    if (counter_num == 0){
+        return false
+    }
+    totalcount16.innerHTML = parseInt(counter_num) - 1
+    tbl16.innerHTML = parseInt(counter_num) - 1
+};
+
 
 
 //////////Reset button function
@@ -332,6 +594,14 @@ function resetCounter(){
     totalcount6.innerHTML = 0;
     totalcount7.innerHTML = 0;
     totalcount8.innerHTML = 0;
+    totalcount9.innerHTML = 0;
+    totalcount10.innerHTML = 0;
+    totalcount11.innerHTML = 0;
+    totalcount12.innerHTML = 0;
+    totalcount13.innerHTML = 0;
+    totalcount14.innerHTML = 0;
+    totalcount15.innerHTML = 0;
+    totalcount16.innerHTML = 0;
     tbl1.innerHTML = 0;
     tbl2.innerHTML = 0;
     tbl3.innerHTML = 0;
@@ -340,6 +610,14 @@ function resetCounter(){
     tbl6.innerHTML = 0;
     tbl7.innerHTML = 0;
     tbl8.innerHTML = 0;
+    tbl9.innerHTML = 0;
+    tbl10.innerHTML = 0;
+    tbl11.innerHTML = 0;
+    tbl12.innerHTML = 0;
+    tbl13.innerHTML = 0;
+    tbl14.innerHTML = 0;
+    tbl15.innerHTML = 0;
+    tbl16.innerHTML = 0;
     tbl1b.innerHTML = 0;
     tbl2b.innerHTML = 0;
     tbl3b.innerHTML = 0;
@@ -348,6 +626,14 @@ function resetCounter(){
     tbl6b.innerHTML = 0;
     tbl7b.innerHTML = 0;
     tbl8b.innerHTML = 0;
+    tbl9b.innerHTML = 0;
+    tbl10b.innerHTML = 0;
+    tbl11b.innerHTML = 0;
+    tbl12b.innerHTML = 0;
+    tbl13b.innerHTML = 0;
+    tbl14b.innerHTML = 0;
+    tbl15b.innerHTML = 0;
+    tbl16b.innerHTML = 0;
     tbl1c.innerHTML = 0;
     tbl2c.innerHTML = 0;
     tbl3c.innerHTML = 0;
@@ -356,6 +642,14 @@ function resetCounter(){
     tbl6c.innerHTML = 0;
     tbl7c.innerHTML = 0;
     tbl8c.innerHTML = 0;
+    tbl9c.innerHTML = 0;
+    tbl10c.innerHTML = 0;
+    tbl11c.innerHTML = 0;
+    tbl12c.innerHTML = 0;
+    tbl13c.innerHTML = 0;
+    tbl14c.innerHTML = 0;
+    tbl15c.innerHTML = 0;
+    tbl16c.innerHTML = 0;
         console.log('Counters have been reset.');
       } else {
         // Do nothing!
@@ -469,6 +763,9 @@ function fn1(){ //called in html using "onclick=" in the button
 }
 
 
+
+
+//////////////MODAL IMAGE VIEWING///////////////////
 // Get the modal for image 1
 var modal1 = document.getElementById("myModal1");
 var modal2 = document.getElementById("myModal2");
@@ -569,3 +866,74 @@ span7.onclick = function() {
     modal7.style.display = "none";}
 span8.onclick = function() {
     modal8.style.display = "none";}
+
+
+///////////////// Add more counters
+function addnewcounter() {
+    counter_num = numbercounters.innerHTML;
+    numbercounters.innerHTML = parseInt(counter_num) + 1;
+    var x1 = document.getElementById("nextcounter");
+    var y1 = document.getElementById("nextrow");
+    var x2 = document.getElementById("nextcounter2");
+    var y2 = document.getElementById("nextrow2");
+    var x3 = document.getElementById("nextcounter3");
+    var y3 = document.getElementById("nextrow3");
+    var x4 = document.getElementById("nextcounter4");
+    var y4 = document.getElementById("nextrow4");
+    var x5 = document.getElementById("nextcounter5");
+    var y5 = document.getElementById("nextrow5");
+    var x6 = document.getElementById("nextcounter6");
+    var y6 = document.getElementById("nextrow6");
+    var x7 = document.getElementById("nextcounter7");
+    var y7 = document.getElementById("nextrow7");
+    var x8 = document.getElementById("nextcounter8");
+    var y8 = document.getElementById("nextrow8");
+
+    if (x1.style.display === "none") {//Add counter
+        x1.style.display = "block";}
+    if (y1.style.display === "none"){    //Add table row
+        y1.style.display = "table-row"};
+
+    if (numbercounters.innerHTML == 2){
+        if (x2.style.display === "none") {
+            x2.style.display = "block";}
+          if (y2.style.display === "none"){
+              y2.style.display = "table-row";}
+    }       
+    if (numbercounters.innerHTML == 3){
+        if (x3.style.display === "none") {
+            x3.style.display = "block";}
+          if (y3.style.display === "none"){
+              y3.style.display = "table-row";}
+    }       
+    if (numbercounters.innerHTML == 4){
+        if (x4.style.display === "none") {
+            x4.style.display = "block";}
+          if (y4.style.display === "none"){
+              y4.style.display = "table-row";}
+    }       
+    if (numbercounters.innerHTML == 5){
+        if (x5.style.display === "none") {
+            x5.style.display = "block";}
+          if (y5.style.display === "none"){
+              y5.style.display = "table-row";}
+    }       
+    if (numbercounters.innerHTML == 6){
+        if (x6.style.display === "none") {
+            x6.style.display = "block";}
+          if (y6.style.display === "none"){
+              y6.style.display = "table-row";}
+    }       
+    if (numbercounters.innerHTML == 7){
+        if (x7.style.display === "none") {
+            x7.style.display = "block";}
+          if (y7.style.display === "none"){
+              y7.style.display = "table-row";}
+    }       
+    if (numbercounters.innerHTML == 8){
+        if (x8.style.display === "none") {
+            x8.style.display = "block";}
+          if (y8.style.display === "none"){
+              y8.style.display = "table-row";}
+    }       
+}
