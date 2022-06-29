@@ -9,7 +9,7 @@ These counters are user-friendly tools designed for enumerating taxa in aquatic 
 
 **PlanktonCounter**
 - For any taxa from a plankton tow (user adds names to all counters, with the option to add more taxa)
-- Calculates #cells/colonies per liter lake water based on user inputs of depth, net ring size, and volume of sample
+- Calculates #cells/colonies per liter lake water based on user inputs of depth, plankton net ring size, and volume of sample
 
 **TaxonCounter**
 - General counters for any aquatic or terrestrial taxa (user ads names to all counters, with the option to add more taxa)
