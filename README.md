@@ -23,7 +23,7 @@ These counters are user-friendly tools designed for enumerating taxa in aquatic 
 
 **3.** First, enter your **name**, **date** of sample collection, **time** of collection, general **location** on the lake, **coordinates** (lat/lon).
 
-<ins>**4a.** For the CyanoCounter and PlanktonCounter</ins>, enter the **volume** of your net sample (measured in the graduated cylinder). You can leave the default values for **depth**, **net diameter**, and **rows** **counted**, _**unless**_ you sampled a different depth, used a non-LSPA plankton net, or counted more or less than 5 rows on the slide. 
+<ins>**4a.** For the CyanoCounter and PlanktonCounter</ins>, enter the **volume** of your net sample (measured in the graduated cylinder). You can leave the default values for **depth**, **net diameter**, and **rows** **counted**, _**unless**_ you sampled a different depth, different sized net, or counted more or less than 5 rows on the slide. 
 - The # rows is used to esimate the proportion of the slide you have counted
 - The sample volume is used in combination with a volume of 1 mL for the Sedgewick Rafter cell to estimate the number of cells/colonies per sample
 - The net ring size and depth inputs are used to calculate the volume of lake water sampled
