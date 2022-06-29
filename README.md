@@ -5,7 +5,7 @@ These counters are user-friendly tools designed for enumerating taxa in aquatic 
 ### Quick guide to differences:
 **CyanoCounter**
 - For cyanobacteria, specifically (common taxa are preset on the counters, with the option to change names and/or add more taxa)
-- Calculates #cells/colonies per liter lake water based on user inputs of depth, net ring size, and volume of sample
+- Calculates #cells/colonies per liter lake water based on user inputs of depth, plankton net ring size, and volume of sample
 
 **PlanktonCounter**
 - For any taxa from a plankton tow (user adds names to all counters, with the option to add more taxa)
