@@ -32,18 +32,18 @@ These counters are user-friendly tools designed for enumerating taxa in aquatic 
 
 **5.** Enter any additional **notes** that might be helpful (e.g., notes about location, weather conditions, visible bloom, other taxa observed, etc.)
 
-**6.** Click **"Submit Info"** to log this information. You can go back and change these answers at any time, just make sure you click Submit Info again to log any changes you make.
+**6.** Click **"Submit Info"** to log this information to your data sheet. You can go back and change these answers at any time, just make sure you click Submit Info again to log any changes you make.
 
-![inputboxes](https://user-images.githubusercontent.com/70969187/174131040-e9e6d6d9-c017-48db-9ad5-9ea27743aab0.jpg)
+![inputboxes](https://user-images.githubusercontent.com/70969187/176552968-6019b738-1148-4012-b2e7-2c10e39c76a1.jpg)
 
-**7.** Now you're ready to count. As you move across your slide, use the counters to keep track of the number of each type of cyanobacteria you encounter. Remember to count all cells/colonies from 5 random rows on the slide. 
+**7.** Use the counters to keep track of the number of each taxon. The counts will be automatically entered to your data table. 
 - Use the **+** button to increase the count and the **-** button to decrease it
 - The total number of each cyanobacteria counted is displayed at the bottom of each colored box
 - If you need to reset the counters at any time, click the "**Reset counters**" button (only do this if you're sure you want to start over)
 
 ![counters](https://user-images.githubusercontent.com/70969187/176551703-295a934c-6d17-492e-bbc3-946300a0499f.jpg)
 
-**8.** When you are finished counting 5 rows, click "**Export data**" to download these data to the computer.
+**8.** When you are finished, click "**Export data**" to download these data to the computer.
 - The downloaded file (.csv) will contain the # of each cyanboacteria and the information you provided at the top of the page
 - The filename will automatically be set as your name and the date
 - A real-time preview of the count data is always shown beneath the counters (bottom of page)
