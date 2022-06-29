@@ -1,6 +1,6 @@
 ## Welcome to the CyanoCounter, PlanktonCounter, and TaxonCounter! 
 
-These counters are user-friendly tools designed for enumerating taxa in ***aquatic*** (CyanoCounter and PlanktonCounter) or ***terrestrial*** (TaxonCounter) environments. 
+These counters are user-friendly tools designed for enumerating taxa in aquatic (CyanoCounter and PlanktonCounter) or terrestrial (TaxonCounter) environments. 
 
 ### Quick guide to differences:
 **CyanoCounter**
