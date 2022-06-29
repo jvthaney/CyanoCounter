@@ -88,6 +88,10 @@
 @media screen and (max-width:990px){
     .counter{ margin-bottom: 40px; }
 }
+.counter.khaki:before{ background-color: rgb(125, 119, 37); }
+@media screen and (max-width:990px){
+    .counter{ margin-bottom: 40px; }
+}
 
 .btn {
     font-size : 50px;
@@ -110,6 +114,7 @@
     color: #eff0e3;
 }
 
+
 .container {
     margin-top: 100px;
 }
@@ -129,10 +134,47 @@
     font-size: 18px;
     font-family: "Cabin", sans-serif;
 }
-.instructions {
+
+.countername{
     font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin: 0 0 0 0;
+    color: white;
+}
+
+input.transparent-input { 
+    border:none !important
+}
+.form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 1; /* Firefox */
+}
+
+.form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: white;
+}
+
+.form-control::-ms-input-placeholder { /* Microsoft Edge */
+    color: white;
+}
+.transparent-input {
+   background-color: rgba(0, 0, 0, 0);
+   border:none;
+   font-size: 20px;
+   font-family: 'Cabin', sans-serif;
+}
+
+ input.transparent-input{
+       background-color:rgba(0,0,0,0) !important;
+       border:none !important;
+    }
+
+.instructions {
+    font-size: 18px;
     text-align: left;
 }
+
 .instructions2 {
     font-size: 18px;
     text-align: left;
