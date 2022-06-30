@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content=""width=device-width,initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia|Ubuntu|Advent Pro|Oswald|Noto Sans|Assistant|Cabin|News Cycle">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia|Ubuntu|Advent Pro|Oswald|Noto Sans|Assistant|Cabin|Barlow Condensed|News Cycle">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">    <title>Tally counter</title>
-    <link href="main.css" rel="stylesheet">
-    <link href="main.js">
+    <link href="Plankton.css" rel="stylesheet">
+    <link href="Plankton.js">
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" > -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
-
+    
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JDJ20QH0E"></script>
     <script>
@@ -24,7 +24,7 @@
 <body class="jumbotron">
     <div class="navheader">
         <nav class="navbar-light navbar-expand-lg fixed-top" style="background-color: #333;">
-          <a class="navbar-brand" href="#" style="color: rgb(163, 255, 223)">CyanoCounter</a>
+          <a class="navbar-brand" href="#" style="color: lightgreen">PlanktonCounter</a>
           <li style="float:right" class="dropdown-menu-dark nav-item banner" >
             <a class="button active" href="https://github.com/jvthaney/cyanocounter/blob/main/README.md" target="_blank">Full instructions</a>
             <li style="float:right" class="dropdown-menu-dark nav-item banner" >
@@ -37,9 +37,9 @@
         </li>
         </nav>
       </div>
-      <form class="row g-3 first">
-        <h3 style="font-family: 'News Cycle', 'Arial Narrow', Arial, sans-serif;font-size: 32px; color: darkcyan;text-align: center;"><b>Counters for enumerating cyanobacteria taxa </b></h3>
-
+      </div>
+      <form class="row g-3 first" style="margin-left: 2px;margin-right: 2px;">
+        <h3 style="font-family: 'News Cycle', 'Arial Narrow', Arial, sans-serif;font-size: 32px; color: darkgreen;text-align: center;"><b>Customize counters for plankton taxa</b></h3>
         <div class="col-md-2">
             <label for="inputname" class="form-label">Name of counter</label>
             <input type="text" class="form-control nameinput" id="text1" placeholder="Type your name">
@@ -93,14 +93,14 @@
          <br><br> <p id="outalert"></p>
         </div>
 
-          <div class="container second">
-            <ul>
+        <div class="container second">
+            <ul >
               <li class="instructions no-bullet">1. Enter your information in the boxes above and click <b>"Submit Info"</b> to log the information.</li>
               <ul style="margin-left: 50px; padding-left: 0">
                 <li class="instructions">Default values are for LSPA protocols: e.g., 2 m sample depth, net ring size, rows counted, and volume on slide (Sedgewick Rafter)</li>
                 <li class="instructions" style="padding-bottom: 10px;">If you vary from these defaults, please change the value and click Submit Info again to adjust the calculations</li>
             </ul>
-              <li class="instructions no-bullet">2. As you move across your slide, use the counters below to keep track of the #cells/colonies of each type of cyanobacteria.</li>
+              <li class="instructions no-bullet">2. As you move across your slide, use the counters below to keep track of the #cells/colonies of each taxon.</li>
               <ul style="margin-left: 50px; padding-left: 0">
                 <li class="instructions">Aim to count 5 random rows of your slide - if you count more or less than 5 rows, please change the number of rows in the box above to 
                 adjust the calculations </li>
@@ -119,11 +119,9 @@
                     <div class="counter-icon">
                         <i class="fa fa-globe"></i>
                     </div>
-                    <button type="button" id="myImg1" class="btn btn-light view">View</button>
-                    <br>
                     <button class="btn add mx-10 mt-10 add1">+</button>
                     <button class="btn add mx-10 mt-10 min1">-</button>
-                    <h3>Microcystis</h3>
+                    <input type="text" onchange="namechange()" class="form-control transparent-input countername" id="tax1" placeholder="Enter name">
                     <span class="totalcount1 counter-value">0</span>
                 </div>
             </div>
@@ -132,11 +130,9 @@
                     <div class="counter-icon">
                         <i class="fa fa-rocket"></i>
                     </div>
-                    <button type="button" id="myImg2" class="btn btn-light view">View</button>
-                    <br>
                     <button class="btn add mx-10 mt-10 add2">+</button>
                     <button class="btn add mx-10 mt-10 min2">-</button>
-                    <h3>Dolichospermum</h3>
+                    <input type="text" onchange="namechange()" class="form-control transparent-input countername" id="tax2" placeholder="Enter name">
                     <span class="totalcount2 counter-value">0</span>
                 </div>
             </div>
@@ -145,11 +141,9 @@
                     <div class="counter-icon">
                         <i class="fa fa-rocket"></i>
                     </div>
-                    <button type="button" id="myImg3" class="btn btn-light view">View</button>
-                    <br>
                     <button class="btn add mx-10 mt-10 add3">+</button>
                     <button class="btn add mx-10 mt-10 min3">-</button>
-                    <h3>Gloeotrichia</h3>
+                    <input type="text" onchange="namechange()" class="form-control transparent-input countername" id="tax3" placeholder="Enter name">
                     <span class="totalcount3 counter-value">0</span>
                 </div>
             </div>
@@ -158,28 +152,24 @@
                     <div class="counter-icon">
                         <i class="fa fa-rocket"></i>
                     </div>
-                    <button type="button" id="myImg4" class="btn btn-light view">View</button>
-                    <br>
                     <button class="btn add mx-10 mt-10 add4">+</button>
                     <button class="btn add mx-10 mt-10 min4">-</button>
-                    <h3>Chroococcus</h3>
+                    <input type="text" onchange="namechange()" class="form-control transparent-input countername" id="tax4" placeholder="Enter name">
                     <span class="totalcount4 counter-value">0</span>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="container second">
+        <div class="container">
             <div class="row">
             <div class="col-md-3 col-sm-6">
                 <div class="counter teal">
                     <div class="counter-icon">
                         <i class="fa fa-rocket"></i>
                     </div>
-                    <button type="button" id="myImg5" class="btn btn-light view">View</button>
-                    <br>
                     <button class="btn add mx-10 mt-10 add5">+</button>
                     <button class="btn add mx-10 mt-10 min5">-</button>
-                    <h3>Coelosphaerium/Woronichinia</h3>
+                    <input type="text" onchange="namechange()" class="form-control transparent-input countername" id="tax5" placeholder="Enter name">
                     <span class="totalcount5 counter-value">0</span>
                 </div>
             </div>
@@ -188,11 +178,9 @@
                     <div class="counter-icon">
                         <i class="fa fa-rocket"></i>
                     </div>
-                    <button type="button" id="myImg6" class="btn btn-light view">View</button>
-                    <br>
                     <button class="btn add mx-10 mt-10 add6">+</button>
                     <button class="btn add mx-10 mt-10 min6">-</button>
-                    <h3>Aphanocapsa</h3>
+                    <input type="text" onchange="namechange()" class="form-control transparent-input countername" id="tax6" placeholder="Enter name">
                     <span class="totalcount6 counter-value">0</span>
                 </div>
             </div>
@@ -201,11 +189,9 @@
                     <div class="counter-icon">
                         <i class="fa fa-rocket"></i>
                     </div>
-                    <button type="button" id="myImg7" class="btn btn-light view">View</button>
-                    <br>
                     <button class="btn add mx-10 mt-10 add7">+</button>
                     <button class="btn add mx-10 mt-10 min7">-</button>
-                    <h3>Merismopedia</h3>
+                    <input type="text" onchange="namechange()" class="form-control transparent-input countername" id="tax7" placeholder="Enter name">
                     <span class="totalcount7 counter-value">0</span>
                 </div>
             </div>
@@ -214,124 +200,121 @@
                     <div class="counter-icon">
                         <i class="fa fa-rocket"></i>
                     </div>
-                    <button type="button" id="myImg8" class="btn btn-light view">View</button>
-                    <br>
                     <button class="btn add mx-10 mt-10 add8">+</button>
                     <button class="btn add mx-10 mt-10 min8">-</button>
-                    <h3>Oscillatoria</h3>
+                    <input type="text" onchange="namechange()" class="form-control transparent-input countername" id="tax8" placeholder="Enter name">
                     <span class="totalcount8 counter-value">0</span>
                 </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container" id="nextcounter" style="display:none">
-        <div class="row">
-            <div class="col-md-3 col-sm-6">
-            <div class="counter">
-                <div class="counter-icon">
-                    <i class="fa fa-rocket"></i>
                 </div>
-                <button class="btn add mx-10 mt-10 add9">+</button>
-                <button class="btn add mx-10 mt-10 min9">-</button>
-                <input type="text" onchange="namechange()" class="form-control transparent-input countername" id="tax9" placeholder="Enter name">
-                <span class="totalcount9 counter-value">0</span>
             </div>
         </div>
-            <div class="col-md-3 col-sm-6" id="nextcounter2" style="display:none">
-                <div class="counter pink">
+        <div class="container" id="nextcounter" style="display:none">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                <div class="counter">
                     <div class="counter-icon">
                         <i class="fa fa-rocket"></i>
                     </div>
-                    <button class="btn add mx-10 mt-10 add10">+</button>
-                    <button class="btn add mx-10 mt-10 min10">-</button>
-                    <input type="text" onchange="namechange()" class="form-control transparent-input countername" id="tax10" placeholder="Enter name">
-                    <span class="totalcount10 counter-value">0</span>
+                    <button class="btn add mx-10 mt-10 add9">+</button>
+                    <button class="btn add mx-10 mt-10 min9">-</button>
+                    <input type="text" onchange="namechange()" class="form-control transparent-input countername" id="tax9" placeholder="Enter name">
+                    <span class="totalcount9 counter-value">0</span>
                 </div>
-            </div>        
-            <div class="col-md-3 col-sm-6" id="nextcounter3" style="display:none">
-                <div class="counter blue">
+            </div>
+                <div class="col-md-3 col-sm-6" id="nextcounter2" style="display:none">
+                    <div class="counter pink">
+                        <div class="counter-icon">
+                            <i class="fa fa-rocket"></i>
+                        </div>
+                        <button class="btn add mx-10 mt-10 add10">+</button>
+                        <button class="btn add mx-10 mt-10 min10">-</button>
+                        <input type="text" onchange="namechange()" class="form-control transparent-input countername" id="tax10" placeholder="Enter name">
+                        <span class="totalcount10 counter-value">0</span>
+                    </div>
+                </div>        
+                <div class="col-md-3 col-sm-6" id="nextcounter3" style="display:none">
+                    <div class="counter blue">
+                        <div class="counter-icon">
+                            <i class="fa fa-rocket"></i>
+                        </div>
+                        <button class="btn add mx-10 mt-10 add11">+</button>
+                        <button class="btn add mx-10 mt-10 min11">-</button>
+                        <input type="text" onchange="namechange()" class="form-control transparent-input countername" id="tax11" placeholder="Enter name">
+                        <span class="totalcount11 counter-value">0</span>
+                    </div>
+                </div>        
+                <div class="col-md-3 col-sm-6" id="nextcounter4" style="display:none">
+                    <div class="counter orange">
+                        <div class="counter-icon">
+                            <i class="fa fa-rocket"></i>
+                        </div>
+                        <button class="btn add mx-10 mt-10 add12">+</button>
+                        <button class="btn add mx-10 mt-10 min12">-</button>
+                        <input type="text" onchange="namechange()" class="form-control transparent-input countername" id="tax12" placeholder="Enter name">
+                        <span class="totalcount12 counter-value">0</span>
+                    </div>
+                </div>          
+             </div>
+        </div>
+        <div class="container" id="nextcounter5" style="display:none">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                <div class="counter teal">
                     <div class="counter-icon">
                         <i class="fa fa-rocket"></i>
                     </div>
-                    <button class="btn add mx-10 mt-10 add11">+</button>
-                    <button class="btn add mx-10 mt-10 min11">-</button>
-                    <input type="text" onchange="namechange()" class="form-control transparent-input countername" id="tax11" placeholder="Enter name">
-                    <span class="totalcount11 counter-value">0</span>
+                    <button class="btn add mx-10 mt-10 add13">+</button>
+                    <button class="btn add mx-10 mt-10 min13">-</button>
+                    <input type="text" onchange="namechange()" class="form-control transparent-input countername" id="tax13" placeholder="Enter name">
+                    <span class="totalcount13 counter-value">0</span>
                 </div>
-            </div>        
-            <div class="col-md-3 col-sm-6" id="nextcounter4" style="display:none">
-                <div class="counter orange">
+            </div>
+            <div class="col-md-3 col-sm-6" id="nextcounter6" style="display:none">
+                <div class="counter grey">
                     <div class="counter-icon">
                         <i class="fa fa-rocket"></i>
                     </div>
-                    <button class="btn add mx-10 mt-10 add12">+</button>
-                    <button class="btn add mx-10 mt-10 min12">-</button>
-                    <input type="text" onchange="namechange()" class="form-control transparent-input countername" id="tax12" placeholder="Enter name">
-                    <span class="totalcount12 counter-value">0</span>
+                    <button class="btn add mx-10 mt-10 add14">+</button>
+                    <button class="btn add mx-10 mt-10 min14">-</button>
+                    <input type="text" onchange="namechange()" class="form-control transparent-input countername" id="tax14" placeholder="Enter name">
+                    <span class="totalcount14 counter-value">0</span>
                 </div>
-            </div>          
-         </div>
+            </div>
+            <div class="col-md-3 col-sm-6" id="nextcounter7" style="display:none">
+                <div class="counter rose">
+                    <div class="counter-icon">
+                        <i class="fa fa-rocket"></i>
+                    </div>
+                    <button class="btn add mx-10 mt-10 add15">+</button>
+                    <button class="btn add mx-10 mt-10 min15">-</button>
+                    <input type="text" onchange="namechange()" class="form-control transparent-input countername" id="tax15" placeholder="Enter name">
+                    <span class="totalcount15 counter-value">0</span>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6" id="nextcounter8" style="display:none">
+                <div class="counter wine">
+                    <div class="counter-icon">
+                        <i class="fa fa-rocket"></i>
+                    </div>
+                    <button class="btn add mx-10 mt-10 add16">+</button>
+                    <button class="btn add mx-10 mt-10 min16">-</button>
+                    <input type="text" onchange="namechange()" class="form-control transparent-input countername" id="tax16" placeholder="Enter name">
+                    <span class="totalcount16 counter-value">0</span>
+                </div>
+            </div>                              
+        </div>
     </div>
-    <div class="container" id="nextcounter5" style="display:none">
-        <div class="row">
-            <div class="col-md-3 col-sm-6">
-            <div class="counter teal">
-                <div class="counter-icon">
-                    <i class="fa fa-rocket"></i>
-                </div>
-                <button class="btn add mx-10 mt-10 add13">+</button>
-                <button class="btn add mx-10 mt-10 min13">-</button>
-                <input type="text" onchange="namechange()" class="form-control transparent-input countername" id="tax13" placeholder="Enter name">
-                <span class="totalcount13 counter-value">0</span>
-            </div>
-        </div>
-        <div class="col-md-3 col-sm-6" id="nextcounter6" style="display:none">
-            <div class="counter grey">
-                <div class="counter-icon">
-                    <i class="fa fa-rocket"></i>
-                </div>
-                <button class="btn add mx-10 mt-10 add14">+</button>
-                <button class="btn add mx-10 mt-10 min14">-</button>
-                <input type="text" onchange="namechange()" class="form-control transparent-input countername" id="tax14" placeholder="Enter name">
-                <span class="totalcount14 counter-value">0</span>
-            </div>
-        </div>
-        <div class="col-md-3 col-sm-6" id="nextcounter7" style="display:none">
-            <div class="counter rose">
-                <div class="counter-icon">
-                    <i class="fa fa-rocket"></i>
-                </div>
-                <button class="btn add mx-10 mt-10 add15">+</button>
-                <button class="btn add mx-10 mt-10 min15">-</button>
-                <input type="text" onchange="namechange()" class="form-control transparent-input countername" id="tax15" placeholder="Enter name">
-                <span class="totalcount15 counter-value">0</span>
-            </div>
-        </div>
-        <div class="col-md-3 col-sm-6" id="nextcounter8" style="display:none">
-            <div class="counter wine">
-                <div class="counter-icon">
-                    <i class="fa fa-rocket"></i>
-                </div>
-                <button class="btn add mx-10 mt-10 add16">+</button>
-                <button class="btn add mx-10 mt-10 min16">-</button>
-                <input type="text" onchange="namechange()" class="form-control transparent-input countername" id="tax16" placeholder="Enter name">
-                <span class="totalcount16 counter-value">0</span>
-            </div>
-        </div>                              
-    </div>
-</div>
+    <br><br>
+    <button type="button" class="btn btn-r btn-addcounter" id="btn-addcounter" onclick="addnewcounter()" style="background-color: darkslategray;color: white;">Add counter +</button>
+    <span class="numbercounters counter-value" style="display:none">0</span>
+    <br><br>
+    <button class="btn btn-r reset bg-light" >Reset counters</button>
+    <hr>
+    <br>
+    <button type="button" class="btn btn-r exp btn-light" >EXPORT DATA</button>
 <br><br>
-<button type="button" class="btn btn-r btn-addcounter" id="btn-addcounter" onclick="addnewcounter()" style="background-color: darkslategray;color: white;">Add counter +</button>
-<span class="numbercounters counter-value" style="display:none">0</span>
-<br><br>
-<button class="btn btn-r reset bg-light" >Reset counters</button>
 <hr>
-<br>
-<button type="button" class="btn btn-r exp btn-light" >EXPORT DATA</button>
-<br><br>
-<hr>
-<h1 class="instructions">Preview of data:</h1>
+  <h1 class="instructions">Preview of data:</h1>
     <br>
     <table class="tbl", border="1" cellspacing="0" cellpadding="10">
         <tr>
@@ -368,61 +351,61 @@
             <tr>
                 <th>Cyanobacteria</th>
                 <th>Count</th>
-                <th>Colonies/slide</th>
-                <th>Colonies/L</th>
+                <th>Individuals/slide</th>
+                <th>Individuals/L</th>
                 <th>Relative abundance (%)</th>
             </tr>
             <tr>
-                <td>Microcystis</td>
+                <td id="tax1out"></td>
                 <td class="tbl1">0</td>
                 <td class="tbl1b" id="tbl1b">0</td>
                 <td class="tbl1c" id="tbl1c">0</td>
                 <td class="tbl1d" id="tbl1d">0</td>
             </tr>
             <tr>
-                <td>Dolichospermum</td>
+                <td id="tax2out"></td>
                 <td class="tbl2">0</td>
                 <td class="tbl2b" id="tbl2b">0</td>
                 <td class="tbl2c" id="tbl2c">0</td>
                 <td class="tbl2d" id="tbl2d">0</td>
             </tr>
             <tr>
-                <td>Gloeotrichia</td>
+                <td id="tax3out"></td>
                 <td class="tbl3">0</td>
                 <td class="tbl3b" id="tbl3b">0</td>
                 <td class="tbl3c" id="tbl3c">0</td>
                 <td class="tbl3d" id="tbl3d">0</td>
             </tr>
             <tr>
-                <td>Chroococcus</td>
+                <td id="tax4out"></td>
                 <td class="tbl4">0</td>
                 <td class="tbl4b" id="tbl4b">0</td>
                 <td class="tbl4c" id="tbl4c">0</td>
                 <td class="tbl4d" id="tbl4d">0</td>
             </tr>
             <tr>
-                <td>Coelosph/Woron</td>
+                <td id="tax5out"></td>
                 <td class="tbl5">0</td>
                 <td class="tbl5b" id="tbl5b">0</td>
                 <td class="tbl5c" id="tbl5c">0</td>
                 <td class="tbl5d" id="tbl5d">0</td>
             </tr>
             <tr>
-                <td>Aphanocapsa</td>
+                <td id="tax6out"></td>
                 <td class="tbl6">0</td>
                 <td class="tbl6b" id="tbl6b">0</td>
                 <td class="tbl6c" id="tbl6c">0</td>
                 <td class="tbl6d" id="tbl6d">0</td>
             </tr>
             <tr>
-                <td>Merismopedia</td>
+                <td id="tax7out"></td>
                 <td class="tbl7 counter-value">0</td>
                 <td class="tbl7b counter-value" id="tbl7b">0</td>
                 <td class="tbl7c" id="tbl7c">0</td>
                 <td class="tbl7d" id="tbl7d">0</td>
             </tr>
             <tr>
-                <td>Oscillatoria</td>
+                <td id="tax8out"></td>
                 <td class="tbl8 counter-value">0</td>
                 <td class="tbl8b counter-value" id="tbl8b">0</td>
                 <td class="tbl8c counter-value" id="tbl8c">0</td>
@@ -487,53 +470,7 @@
         </table>
         <br>
 
-<!-- Trigger the Modal -->
-<!-- <img id="myImg" src="MCimages.jpg" alt="Snow" style="width:100%;max-width:300px"> -->
-                    <!-- The Modal -->
-                    <div id="myModal1" class="modal modal1">
-                        <span class="close close1">&times;</span>
-                        <img class="modal-content" id="img01 myImg1" src="IDimages/MCimages.jpg">
-                        <div id="caption1" class="caption"><a class="caption" href="http://cfb.unh.edu/CyanoKey/Microcystis.html" target="_blank">See more images</a></div>
-                    </div>
-                    <div id="myModal2" class="modal modal2">
-                        <span class="close close2">&times;</span>
-                        <img class="modal-content" id="img02 myImg2" src="IDimages/DOLimages.jpg">
-                        <div id="caption2" class="caption"><a class="caption" href="http://cfb.unh.edu/CyanoKey/Anabaena.html" target="_blank">See more images</a></div>
-                    </div>
-                    <div id="myModal3" class="modal modal3">
-                        <span class="close close3">&times;</span>
-                        <img class="modal-content" id="img03 myImg3" src="IDimages/GLOEOimages.jpg">
-                        <div id="caption3" class="caption"><a class="caption" href="http://cfb.unh.edu/CyanoKey/Gloeotrichia.html" target="_blank">See more images</a></div>
-                    </div>
-                    <div id="myModal4" class="modal modal4">
-                        <span class="close close4">&times;</span>
-                        <img class="modal-content" id="img04 myImg4" src="IDimages/CHROOimages.jpg">
-                        <div id="caption4" class="caption"><a class="caption" href="http://cfb.unh.edu/CyanoKey/Gloeocapsa.html" target="_blank">See more images</a></div>
-                    </div>
-                    <div id="myModal5" class="modal modal5">
-                        <span class="close close5">&times;</span>
-                        <img class="modal-content" id="img05 myImg5" src="IDimages/COEL_WOROimages.jpg">
-                        <div id="caption5" class="caption">See more images of <a style="text-decoration: none;color: darksalmon;" href="http://cfb.unh.edu/CyanoKey/Woronichinia.html" target="_blank">Woronichinia</a> and 
-                            <a style="text-decoration: none;color: darksalmon;" href="http://cfb.unh.edu/CyanoKey/Coelosphaerium.html" target="_blank">Coelosphaerium</a></div>
-                    </div>
-                    <div id="myModal6" class="modal modal6">
-                        <span class="close close6">&times;</span>
-                        <img class="modal-content" id="img06 myImg6" src="IDimages/APHANimages.jpg">
-                        <div id="caption6" class="caption"><a class="caption" href="http://cfb.unh.edu/CyanoKey/Aphanocapsa.html" target="_blank">See more images</a></div>
-                    </div>
-                    <div id="myModal7" class="modal modal7">
-                        <span class="close close7">&times;</span>
-                        <img class="modal-content" id="img07 myImg7" src="IDimages/MERISimages.jpg">
-                        <div id="caption7" class="caption"><a class="caption" href="http://cfb.unh.edu/CyanoKey/Merismopedia.html" target="_blank">See more images</a></div>
-                    </div>
-                    <div id="myModal8" class="modal modal8">
-                        <span class="close close8">&times;</span>
-                        <img class="modal-content" id="img08 myImg8" src="IDimages/OSCimages.jpg">
-                        <div id="caption8" class="caption"><a class="caption" href="http://cfb.unh.edu/CyanoKey/Oscillatoria.html" target="_blank">See more images</a></div>
-                    </div>
-
-
-    <script src="main.js"></script>
+    <script src="Plankton.js"></script>
     
 </body>
 </html>
