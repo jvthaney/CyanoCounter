@@ -127,13 +127,13 @@ let reset = document.querySelector(".reset");
 let exp = document.querySelector(".exp");
 
 //User inputs and outputs:
-let gradinput = document.querySelector(".gradinput");
-let depthinput = document.querySelector(".depthinput");
-let diaminput = document.querySelector(".diaminput");
-let gradoutput = document.querySelector(".gradoutput");
-let depthoutput = document.querySelector(".depthoutput");
-let diamoutput = document.querySelector(".diamoutput");
-let towsinput = document.querySelector(".towsinput");
+// let gradinput = document.querySelector(".gradinput");
+// let depthinput = document.querySelector(".depthinput");
+// let diaminput = document.querySelector(".diaminput");
+// let gradoutput = document.querySelector(".gradoutput");
+// let depthoutput = document.querySelector(".depthoutput");
+// let diamoutput = document.querySelector(".diamoutput");
+// let towsinput = document.querySelector(".towsinput");
 
 //Detect clicks on each button
 add1.addEventListener('click', addCounter1);
@@ -286,7 +286,7 @@ function rel(){
     var cps15 = parseFloat(c15/percslide)
     var cps16 = parseFloat(c16/percslide)
 
-    var volslide = parseFloat(document.getElementById(".text12").value)
+    var volslide = parseFloat(document.getElementById("text12").value)
     var chambervol = parseFloat(volslide/1000)//1 ml = 0.001 L (Sedgewick Rafter Cell volume)
     var propcounted = parseFloat(chambervol / gradcylinderliter) //proportion volume of Sedgewick Rafter counted based on #rows counted
     var cpsamp1 = parseFloat(cps1 / propcounted)//cells per sample
