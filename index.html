@@ -70,27 +70,27 @@
           </div>
           <div class="col-md-1">
             <label for="inputlon" class="form-label rowinput">Rows counted</label>
-            <input type="rows" class="form-control rowinput" id="text10" value="3">
+            <input type="rows" class="form-control rowinput" id="text8" value="3">
           </div>
           <div class="col-sm-1">
             <label for="inputlon" class="form-label depthinput">Depth (m)</label>
-            <input type="depth" class="form-control depthinput" id="text8" value="2">
+            <input type="depth" class="form-control depthinput" id="text9" value="2">
           </div>
           <div class="col-sm-1">
-            <label for="inputlon" class="form-label depthinput"># Tows </label>
-            <input type="depth" class="form-control depthinput" id="text8" value="2">
+            <label for="inputlon" class="form-label towsinput"># Tows </label>
+            <input type="tows" class="form-control towsinput" id="text10" value="2">
           </div>
           <div class="col-md-3">
             <label for="inputlon" class="form-label diaminput">Net diameter (m; default = LSPA net)</label>
-            <input type="name" class="form-control daiminput" id="text9" value="0.16">
+            <input type="name" class="form-control daiminput" id="text11" value="0.16">
           </div>
           <div class="col-md-1">
             <label for="inputlon" class="form-label rowinput">Vol slide (ml)</label>
-            <input type="rows" class="form-control rowinput" id="text11" value="1">
+            <input type="rows" class="form-control rowinput" id="text12" value="1">
           </div>
           <div class="col-md-2">
             <label for="inputlon" class="form-label noteinput">Notes</label>
-            <input type="notes" class="form-control noteinput" id="text12">
+            <input type="notes" class="form-control noteinput" id="text13">
           </div>
           <div class="row">
           <button type="button" class="btn btn-r bg-light submitinfo" id="subbtn" onclick="fn1();rel()">Submit info</button>
@@ -346,9 +346,10 @@
             <th>Lat</th>
             <th>Lon</th>
             <th>Vol sample (ml)</th>
-            <th>Depth (m)</th>
-            <th>Net diam (m)</th>
             <th>Rows counted</th>
+            <th>Depth (m)</th>
+            <th># Tows</th>
+            <th>Net diam (m)</th>
             <th>Vol slide (ml)</th>
             <th>Counter notes</th>
         </tr>
@@ -360,11 +361,12 @@
             <td class="latoutput" id="output5"></td>
             <td class="lonoutput" id="output6"></td>
             <td class="gradoutput" id="output7"></td>
-            <td class="depthoutput" id="output8"></td>
-            <td class="diamoutput" id="output9"></td>
-            <td class="rowoutput" id="output10"></td>
-            <td class="noteoutput" id="output11"></td>
-            <td class="slideoutput" id="output12"></td>
+            <td class="rowoutput" id="output8"></td>
+            <td class="towsoutput" id="output9"></td>
+            <td class="depthoutput" id="output10"></td>
+            <td class="diamoutput" id="output11"></td>
+            <td class="noteoutput" id="output12"></td>
+            <td class="slideoutput" id="output13"></td>
         </tr>
     </table> 
     <br>

@@ -133,6 +133,7 @@ let diaminput = document.querySelector(".diaminput");
 let gradoutput = document.querySelector(".gradoutput");
 let depthoutput = document.querySelector(".depthoutput");
 let diamoutput = document.querySelector(".diamoutput");
+let towsinput = document.querySelector(".towsinput");
 
 //Detect clicks on each button
 add1.addEventListener('click', addCounter1);
@@ -262,13 +263,13 @@ function rel(){
     tbl15d.innerHTML = parseFloat(r15.toFixed(1))
     tbl16d.innerHTML = parseFloat(r16.toFixed(1))
 
-    var rows = parseFloat(document.getElementById("text10").value)//#rows coutned by user
-    var percslide = parseFloat(rows / 20) //percent of slide counted based on number of rows
+    var rows = parseFloat(document.getElementById("text8").value)//#rows coutned by user
+    var percslide = parseFloat(rows / 20) //proportion of slide counted based on number of rows
     var gradcylinder = parseFloat(document.getElementById("text7").value)//volume in graduated cylinder provided by user
     var literconv = parseFloat(1000)//conversion factor from ml to liters
     var gradcylinderliter = parseFloat(gradcylinder / literconv)//volume in liters
 
-    var cps1 = parseFloat(c1/percslide) //5 counted rows x 4 = total of 20 rows per slide
+    var cps1 = parseFloat(c1/percslide) //counts divided by proportion of slide counted
     var cps2 = parseFloat(c2/percslide) 
     var cps3 = parseFloat(c3/percslide) 
     var cps4 = parseFloat(c4/percslide) 
@@ -285,9 +286,9 @@ function rel(){
     var cps15 = parseFloat(c15/percslide)
     var cps16 = parseFloat(c16/percslide)
 
-    var chambervol = parseFloat(0.001)//1 ml = 0.001 L (Sedgewick Rafter Cell volume)
+    var volslide = parseFloat(document.getElementById(".text12").value)
+    var chambervol = parseFloat(volslide/1000)//1 ml = 0.001 L (Sedgewick Rafter Cell volume)
     var propcounted = parseFloat(chambervol / gradcylinderliter) //proportion volume of Sedgewick Rafter counted based on #rows counted
-
     var cpsamp1 = parseFloat(cps1 / propcounted)//cells per sample
     var cpsamp2 = parseFloat(cps2 / propcounted)
     var cpsamp3 = parseFloat(cps3 / propcounted)
@@ -305,12 +306,13 @@ function rel(){
     var cpsamp15 = parseFloat(cps15 / propcounted)
     var cpsamp16 = parseFloat(cps16 / propcounted)
     
-    var diameter = parseFloat(document.getElementById("text9").value)
-    var depth = parseFloat(document.getElementById("text8").value)
+    var diameter = parseFloat(document.getElementById("text11").value)
+    var depth = parseFloat(document.getElementById("text9").value)
     var r = parseFloat(diameter/2)
     var lakewaterm3 = parseFloat(Math.PI * r^2 * depth)//Volume cylinder = pi*r^2*h
-    var lakewaterL = parseFloat(lakewaterm3 * 1000) //cubic meters to liters
-
+    var tows = parseFloat(document.getElementById("text10").value)
+    var lakewaterm3Tows = parseFloat(lakewaterm3 * tows)
+    var lakewaterL = parseFloat(lakewaterm3Tows * 1000) //cubic meters to liters
     var cpl1 = parseFloat(cpsamp1/lakewaterL)//cells per liter lake water
     var cpl2 = parseFloat(cpsamp2/lakewaterL)
     var cpl3 = parseFloat(cpsamp3/lakewaterL)
@@ -730,23 +732,25 @@ const out9 = document.getElementById('output9');
 const out10 = document.getElementById('output10');
 const out11 = document.getElementById('output11');
 const out12 = document.getElementById('output12');
+const out13 = document.getElementById('output13');
 const outalert = document.getElementById('outalert');
 
 
 
 function fn1(){ //called in html using "onclick=" in the button 
-    str1 = document.getElementById('text1').value;
-    str2 = document.getElementById('text2').value;
-    str3 = document.getElementById('text3').value;
-    str4 = document.getElementById('text4').value;
-    str5 = document.getElementById('text5').value;
-    str6 = document.getElementById('text6').value;
-    str7 = document.getElementById('text7').value;
-    str8 = document.getElementById('text8').value;
-    str9 = document.getElementById('text9').value;
-    str10 = document.getElementById('text10').value;
-    str11 = document.getElementById('text11').value;
-    str12 = document.getElementById('text12').value;
+    str1 = document.getElementById('text1').value;//name
+    str2 = document.getElementById('text2').value;//date
+    str3 = document.getElementById('text3').value;//time
+    str4 = document.getElementById('text4').value;//location
+    str5 = document.getElementById('text5').value;//lat
+    str6 = document.getElementById('text6').value;//lon
+    str7 = document.getElementById('text7').value;//vol sample
+    str8 = document.getElementById('text8').value;//rows
+    str9 = document.getElementById('text9').value;//depth
+    str10 = document.getElementById('text10').value;//tows
+    str11 = document.getElementById('text11').value;//net diameter
+    str12 = document.getElementById('text12').value;//vol slide
+    str13 = document.getElementById('text13').value;//notes
     out1.innerHTML = str1;
     out2.innerHTML = str2;
     out3.innerHTML = str3;
@@ -759,6 +763,7 @@ function fn1(){ //called in html using "onclick=" in the button
     out10.innerHTML = str10;
     out11.innerHTML = str11;
     out12.innerHTML = str12;
+    out13.innerHTML = str13;
     outalert.innerHTML = "Info submitted";
 }
 
