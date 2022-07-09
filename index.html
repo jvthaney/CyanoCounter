@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content=""width=device-width,initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia|Ubuntu|Advent Pro|Oswald|Noto Sans|Assistant|Cabin|News Cycle">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">    <title>TallyCounter</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">    <title>CyanoCounter</title>
     <link href="main.css" rel="stylesheet">
     <link href="main.js">
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" > -->
@@ -68,23 +68,27 @@
             <label for="inputlon" class="form-label loninput">Volume sample (ml)</label>
             <input type="grad" class="form-control gradinput" id="text7" placeholder="Vol in graduated cylinder">
           </div>
-          <div class="col-sm-2">
-            <label for="inputlon" class="form-label depthinput">Depth sampled (m)</label>
+          <div class="col-md-1">
+            <label for="inputlon" class="form-label rowinput">Rows counted</label>
+            <input type="rows" class="form-control rowinput" id="text10" value="3">
+          </div>
+          <div class="col-sm-1">
+            <label for="inputlon" class="form-label depthinput">Depth (m)</label>
+            <input type="depth" class="form-control depthinput" id="text8" value="2">
+          </div>
+          <div class="col-sm-1">
+            <label for="inputlon" class="form-label depthinput"># Tows </label>
             <input type="depth" class="form-control depthinput" id="text8" value="2">
           </div>
           <div class="col-md-3">
             <label for="inputlon" class="form-label diaminput">Net diameter (m; default = LSPA net)</label>
             <input type="name" class="form-control daiminput" id="text9" value="0.16">
           </div>
-          <div class="col-md-2">
-            <label for="inputlon" class="form-label rowinput">Rows counted</label>
-            <input type="rows" class="form-control rowinput" id="text10" value="5">
-          </div>
           <div class="col-md-1">
             <label for="inputlon" class="form-label rowinput">Vol slide (ml)</label>
             <input type="rows" class="form-control rowinput" id="text11" value="1">
           </div>
-          <div class="col-md-1">
+          <div class="col-md-2">
             <label for="inputlon" class="form-label noteinput">Notes</label>
             <input type="notes" class="form-control noteinput" id="text12">
           </div>
@@ -102,7 +106,7 @@
             </ul>
               <li class="instructions no-bullet">2. As you move across your slide, use the counters below to keep track of the #cells/colonies of each type of cyanobacteria.</li>
               <ul style="margin-left: 50px; padding-left: 0">
-                <li class="instructions">Aim to count 5 random rows of your slide - if you count more or less than 5 rows, please change the number of rows in the box above to 
+                <li class="instructions">Aim to count 3 random rows of your slide - if you count more or less than 5 rows, please change the number of rows in the box above to 
                 adjust the calculations </li>
                 <li class="instructions" style="padding-bottom: 10px;">You can preview the data at any time at the bottom of the page (this is what will appear in the downloaded .CSV file) </li>
             </ul>
