@@ -872,6 +872,59 @@ span7.onclick = function() {
 span8.onclick = function() {
     modal8.style.display = "none";}
 
+////////////// Adjust taxon name in table
+// const tax1out = document.getElementById("tax1out");
+// const tax2out = document.getElementById("tax2out");
+// const tax3out = document.getElementById("tax3out");
+// const tax4out = document.getElementById("tax4out");
+// const tax5out = document.getElementById("tax5out");
+// const tax6out = document.getElementById("tax6out");
+// const tax7out = document.getElementById("tax7out");
+// const tax8out = document.getElementById("tax8out");
+const tax9out = document.getElementById("tax9out");
+const tax10out = document.getElementById("tax10out");
+const tax11out = document.getElementById("tax11out");
+const tax12out = document.getElementById("tax12out");
+const tax13out = document.getElementById("tax13out");
+const tax14out = document.getElementById("tax14out");
+const tax15out = document.getElementById("tax15out");
+const tax16out = document.getElementById("tax16out");
+
+function namechange(){
+    // tax1 = document.getElementById("tax1").value;
+    // tax2 = document.getElementById("tax2").value;
+    // tax3 = document.getElementById("tax3").value;
+    // tax4 = document.getElementById("tax4").value;
+    // tax5 = document.getElementById("tax5").value;
+    // tax6 = document.getElementById("tax6").value;
+    // tax7 = document.getElementById("tax7").value;
+    // tax8 = document.getElementById("tax8").value;
+    tax9 = document.getElementById("tax9").value;
+    tax10 = document.getElementById("tax10").value;
+    tax11 = document.getElementById("tax11").value;
+    tax12 = document.getElementById("tax12").value;
+    tax13 = document.getElementById("tax13").value;
+    tax14 = document.getElementById("tax14").value;
+    tax15 = document.getElementById("tax15").value;
+    tax16 = document.getElementById("tax16").value;
+    
+    // tax1out.innerHTML = tax1;
+    // tax2out.innerHTML = tax2;
+    // tax3out.innerHTML = tax3;
+    // tax4out.innerHTML = tax4;
+    // tax5out.innerHTML = tax5;
+    // tax6out.innerHTML = tax6;
+    // tax7out.innerHTML = tax7;
+    // tax8out.innerHTML = tax8;
+    tax9out.innerHTML = tax9;
+    tax10out.innerHTML = tax10;
+    tax11out.innerHTML = tax11;
+    tax12out.innerHTML = tax12;
+    tax13out.innerHTML = tax13;
+    tax14out.innerHTML = tax14;
+    tax15out.innerHTML = tax15;
+    tax16out.innerHTML = tax16;
+}
 
 ///////////////// Add more counters
 function addnewcounter() {
