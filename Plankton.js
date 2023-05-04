@@ -1557,48 +1557,48 @@ function addnewcounter() {
           if (y8.style.display === "none"){
               y8.style.display = "table-row";}
     }       
-    if (x1a.style.display === "none") {//Add counter
+    if (x1a.style.display === 9) {//Add counter
         x1a.style.display = "block";}
     if (y1a.style.display === "none"){    //Add table row
         y1a.style.display = "table-row"};
 
-    if (numbercounters.innerHTML == 2){
+    if (numbercounters.innerHTML == 10){
         if (x2a.style.display === "none") {
             x2a.style.display = "block";}
           if (y2a.style.display === "none"){
               y2a.style.display = "table-row";}
     }       
-    if (numbercounters.innerHTML == 3){
+    if (numbercounters.innerHTML == 11){
         if (x3a.style.display === "none") {
             x3a.style.display = "block";}
           if (y3a.style.display === "none"){
               y3a.style.display = "table-row";}
     }       
-    if (numbercounters.innerHTML == 4){
+    if (numbercounters.innerHTML == 12){
         if (x4a.style.display === "none") {
             x4a.style.display = "block";}
           if (y4a.style.display === "none"){
               y4a.style.display = "table-row";}
     }       
-    if (numbercounters.innerHTML == 5){
+    if (numbercounters.innerHTML == 13){
         if (x5a.style.display === "none") {
             x5a.style.display = "block";}
           if (y5a.style.display === "none"){
               y5a.style.display = "table-row";}
     }       
-    if (numbercounters.innerHTML == 6){
+    if (numbercounters.innerHTML == 14){
         if (x6a.style.display === "none") {
             x6a.style.display = "block";}
           if (y6a.style.display === "none"){
               y6a.style.display = "table-row";}
     }       
-    if (numbercounters.innerHTML == 7){
+    if (numbercounters.innerHTML == 15){
         if (x7a.style.display === "none") {
             x7a.style.display = "block";}
           if (y7a.style.display === "none"){
               y7a.style.display = "table-row";}
     }       
-    if (numbercounters.innerHTML == 8){
+    if (numbercounters.innerHTML == 16){
         if (x8a.style.display === "none") {
             x8a.style.display = "block";}
           if (y8a.style.display === "none"){
