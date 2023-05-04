@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content=""width=device-width,initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia|Ubuntu|Advent Pro|Oswald|Noto Sans|Assistant|Cabin|Barlow Condensed|News Cycle">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">    <title>PlanktonCounter</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">    <title>Tally counter</title>
     <link href="Plankton.css" rel="stylesheet">
     <link href="Plankton.js">
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" > -->
@@ -81,7 +81,7 @@
             <input type="rows" class="form-control rowinput" id="text10" value="5">
           </div>
           <div class="col-md-1">
-            <label for="inputlon" class="form-label rowinput">Subsample vol (ml)</label>
+            <label for="inputlon" class="form-label rowinput">Vol slide (ml)</label>
             <input type="rows" class="form-control rowinput" id="text11" value="1">
           </div>
           <div class="col-md-1">
@@ -304,56 +304,6 @@
             </div>                              
         </div>
     </div>
-
-    <div class="container" id="nextcounter1a" style="display:none">
-        <div class="row">
-            <div class="col-md-3 col-sm-6">
-            <div class="counter teal">
-                <div class="counter-icon">
-                    <i class="fa fa-rocket"></i>
-                </div>
-                <button class="btn add mx-10 mt-10 add13">+</button>
-                <button class="btn add mx-10 mt-10 min13">-</button>
-                <input type="text" onchange="namechange()" class="form-control transparent-input countername" id="tax1a" placeholder="Enter name">
-                <span class="totalcount1a counter-value">0</span>
-            </div>
-        </div>
-        <div class="col-md-3 col-sm-6" id="nextcounter2a" style="display:none">
-            <div class="counter grey">
-                <div class="counter-icon">
-                    <i class="fa fa-rocket"></i>
-                </div>
-                <button class="btn add mx-10 mt-10 add14">+</button>
-                <button class="btn add mx-10 mt-10 min14">-</button>
-                <input type="text" onchange="namechange()" class="form-control transparent-input countername" id="tax2a" placeholder="Enter name">
-                <span class="totalcount2a counter-value">0</span>
-            </div>
-        </div>
-        <div class="col-md-3 col-sm-6" id="nextcounter3a" style="display:none">
-            <div class="counter rose">
-                <div class="counter-icon">
-                    <i class="fa fa-rocket"></i>
-                </div>
-                <button class="btn add mx-10 mt-10 add15">+</button>
-                <button class="btn add mx-10 mt-10 min15">-</button>
-                <input type="text" onchange="namechange()" class="form-control transparent-input countername" id="tax3a" placeholder="Enter name">
-                <span class="totalcount3a counter-value">0</span>
-            </div>
-        </div>
-        <div class="col-md-3 col-sm-6" id="nextcounter4a" style="display:none">
-            <div class="counter wine">
-                <div class="counter-icon">
-                    <i class="fa fa-rocket"></i>
-                </div>
-                <button class="btn add mx-10 mt-10 add16">+</button>
-                <button class="btn add mx-10 mt-10 min16">-</button>
-                <input type="text" onchange="namechange()" class="form-control transparent-input countername" id="tax4a" placeholder="Enter name">
-                <span class="totalcount4a counter-value">0</span>
-            </div>
-        </div>                              
-    </div>
-</div>
-
     <br><br>
     <button type="button" class="btn btn-r btn-addcounter" id="btn-addcounter" onclick="addnewcounter()" style="background-color: darkslategray;color: white;">Add counter +</button>
     <span class="numbercounters counter-value" style="display:none">0</span>
@@ -461,64 +411,6 @@
                 <td class="tbl8c counter-value" id="tbl8c">0</td>
                 <td class="tbl8d" id="tbl8d">0</td>
             </tr>
-            <tr>
-                <td id="tax1aout"></td>
-                <td class="tbl1">0</td>
-                <td class="tbl1b" id="tbl1b">0</td>
-                <td class="tbl1c" id="tbl1c">0</td>
-                <td class="tbl1d" id="tbl1d">0</td>
-            </tr>
-            <tr>
-                <td id="tax2aout"></td>
-                <td class="tbl2">0</td>
-                <td class="tbl2b" id="tbl2b">0</td>
-                <td class="tbl2c" id="tbl2c">0</td>
-                <td class="tbl2d" id="tbl2d">0</td>
-            </tr>
-            <tr>
-                <td id="taxaout"></td>
-                <td class="tbl3">0</td>
-                <td class="tbl3b" id="tbl3b">0</td>
-                <td class="tbl3c" id="tbl3c">0</td>
-                <td class="tbl3d" id="tbl3d">0</td>
-            </tr>
-            <tr>
-                <td id="tax4aout"></td>
-                <td class="tbl4">0</td>
-                <td class="tbl4b" id="tbl4b">0</td>
-                <td class="tbl4c" id="tbl4c">0</td>
-                <td class="tbl4d" id="tbl4d">0</td>
-            </tr>
-            <tr>
-                <td id="tax5aout"></td>
-                <td class="tbl5">0</td>
-                <td class="tbl5b" id="tbl5b">0</td>
-                <td class="tbl5c" id="tbl5c">0</td>
-                <td class="tbl5d" id="tbl5d">0</td>
-            </tr>
-            <tr>
-                <td id="tax6aout"></td>
-                <td class="tbl6">0</td>
-                <td class="tbl6b" id="tbl6b">0</td>
-                <td class="tbl6c" id="tbl6c">0</td>
-                <td class="tbl6d" id="tbl6d">0</td>
-            </tr>
-            <tr>
-                <td id="tax7aout"></td>
-                <td class="tbl7 counter-value">0</td>
-                <td class="tbl7b counter-value" id="tbl7b">0</td>
-                <td class="tbl7c" id="tbl7c">0</td>
-                <td class="tbl7d" id="tbl7d">0</td>
-            </tr>
-            <tr>
-                <td id="tax8aout"></td>
-                <td class="tbl8 counter-value">0</td>
-                <td class="tbl8b counter-value" id="tbl8b">0</td>
-                <td class="tbl8c counter-value" id="tbl8c">0</td>
-                <td class="tbl8d" id="tbl8d">0</td>
-            </tr>
-
-
             <tr id="nextrow" style="display:none">
                 <td id="tax9out"></td>
                 <td class="tbl9 counter-value">0</td>
@@ -575,63 +467,6 @@
                 <td class="tbl16c counter-value" id="tbl16c">0</td>
                 <td class="tbl16d" id="tbl16d">0</td>
             </tr>
-            <tr id="nextrow1a" style="display:none">
-                <td id="tax1aout"></td>
-                <td class="tbl9 counter-value">0</td>
-                <td class="tbl9b counter-value" id="tbl9b">0</td>
-                <td class="tbl9c counter-value" id="tbl9c">0</td>
-                <td class="tbl9d" id="tbl9d">0</td>
-            </tr>
-            <tr id="nextrow2a" style="display:none">
-                <td id="tax2aout"></td>
-                <td class="tbl10 counter-value">0</td>
-                <td class="tbl10b counter-value" id="tbl10b">0</td>
-                <td class="tbl10c counter-value" id="tbl10c">0</td>
-                <td class="tbl10d" id="tbl10d">0</td>
-            </tr>
-            <tr id="nextrow3a" style="display:none">
-                <td id="tax3aout"></td>
-                <td class="tbl11 counter-value">0</td>
-                <td class="tbl11b counter-value" id="tbl11b">0</td>
-                <td class="tbl11c counter-value" id="tbl11c">0</td>
-                <td class="tbl11d" id="tbl11d">0</td>
-            </tr>
-            <tr id="nextrow4a" style="display:none">
-                <td id="tax4aout"></td>
-                <td class="tbl12 counter-value">0</td>
-                <td class="tbl12b counter-value" id="tbl12b">0</td>
-                <td class="tbl12c counter-value" id="tbl12c">0</td>
-                <td class="tbl12d" id="tbl12d">0</td>
-            </tr>
-            <tr id="nextrow5a" style="display:none">
-                <td id="tax5aout"></td>
-                <td class="tbl13 counter-value">0</td>
-                <td class="tbl13b counter-value" id="tbl13b">0</td>
-                <td class="tbl13c counter-value" id="tbl13c">0</td>
-                <td class="tbl13d" id="tbl13d">0</td>
-            </tr>
-            <tr id="nextrow6a" style="display:none">
-                <td id="tax6aout"></td>
-                <td class="tbl14 counter-value">0</td>
-                <td class="tbl14b counter-value" id="tbl14b">0</td>
-                <td class="tbl14c counter-value" id="tbl14c">0</td>
-                <td class="tbl14d" id="tbl14d">0</td>
-            </tr>
-            <tr id="nextrow7a" style="display:none">
-                <td id="tax7aout"></td>
-                <td class="tbl15 counter-value">0</td>
-                <td class="tbl15b counter-value" id="tbl15b">0</td>
-                <td class="tbl15c counter-value" id="tbl15c">0</td>
-                <td class="tbl15d" id="tbl15d">0</td>
-            </tr>
-            <tr id="nextrow8a" style="display:none">
-                <td id="tax8aout"></td>
-                <td class="tbl16 counter-value">0</td>
-                <td class="tbl16b counter-value" id="tbl16b">0</td>
-                <td class="tbl16c counter-value" id="tbl16c">0</td>
-                <td class="tbl16d" id="tbl16d">0</td>
-            </tr>
-
         </table>
         <br>
 

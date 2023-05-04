@@ -15,23 +15,6 @@ let add13 = document.querySelector(".add13");
 let add14 = document.querySelector(".add14");
 let add15 = document.querySelector(".add15");
 let add16 = document.querySelector(".add16");
-let add1a = document.querySelector(".add1a");
-let add2a = document.querySelector(".add2a");
-let add3a = document.querySelector(".add3a");
-let add4a = document.querySelector(".add4a");
-let add5a = document.querySelector(".add5a");
-let add6a = document.querySelector(".add6a");
-let add7a = document.querySelector(".add7a");
-let add8a = document.querySelector(".add8a");
-let add9a = document.querySelector(".add9a");
-let add10a = document.querySelector(".add10a");
-let add11a = document.querySelector(".add11a");
-let add12a = document.querySelector(".add12a");
-let add13a = document.querySelector(".add13a");
-let add14a = document.querySelector(".add14a");
-let add15a = document.querySelector(".add15a");
-let add16a = document.querySelector(".add16a");
-
 
 //Substract buttons:
 let min1 = document.querySelector(".min1");
@@ -50,23 +33,6 @@ let min13 = document.querySelector(".min13");
 let min14 = document.querySelector(".min14");
 let min15 = document.querySelector(".min15");
 let min16 = document.querySelector(".min16");
-let min1a = document.querySelector(".min1a");
-let min2a = document.querySelector(".min2a");
-let min3a = document.querySelector(".min3a");
-let min4a = document.querySelector(".min4a");
-let min5a = document.querySelector(".min5a");
-let min6a = document.querySelector(".min6a");
-let min7a = document.querySelector(".min7a");
-let min8a = document.querySelector(".min8a");
-let min9a = document.querySelector(".min9a");
-let min10a = document.querySelector(".min10a");
-let min11a = document.querySelector(".min11a");
-let min12a = document.querySelector(".min12a");
-let min13a = document.querySelector(".min13a");
-let min14a = document.querySelector(".min14a");
-let min15a = document.querySelector(".min15a");
-let min16a = document.querySelector(".min16a");
-
 
 //Number displayed in each counter:
 let totalcount1 = document.querySelector(".totalcount1");
@@ -85,23 +51,6 @@ let totalcount13 = document.querySelector(".totalcount13");
 let totalcount14 = document.querySelector(".totalcount14");
 let totalcount15 = document.querySelector(".totalcount15");
 let totalcount16 = document.querySelector(".totalcount16");
-let totalcount1a = document.querySelector(".totalcount1a");
-let totalcount2a = document.querySelector(".totalcount2a");
-let totalcount3a = document.querySelector(".totalcount3a");
-let totalcount4a = document.querySelector(".totalcount4a");
-let totalcount5a = document.querySelector(".totalcount5a");
-let totalcount6a = document.querySelector(".totalcount6a");
-let totalcount7a = document.querySelector(".totalcount7a");
-let totalcount8a = document.querySelector(".totalcount8a");
-let totalcount9a = document.querySelector(".totalcount9a");
-let totalcount10a = document.querySelector(".totalcount10a");
-let totalcount11a = document.querySelector(".totalcount11a");
-let totalcount12a = document.querySelector(".totalcount12a");
-let totalcount13a = document.querySelector(".totalcount13a");
-let totalcount14a = document.querySelector(".totalcount14a");
-let totalcount15a = document.querySelector(".totalcount15a");
-let totalcount16a = document.querySelector(".totalcount16a");
-
 
 let numbercounters = document.querySelector(".numbercounters");
 
@@ -122,22 +71,6 @@ let tbl13 = document.querySelector(".tbl13");
 let tbl14 = document.querySelector(".tbl14");
 let tbl15 = document.querySelector(".tbl15");
 let tbl16 = document.querySelector(".tbl16");
-let tbl1a = document.querySelector(".tbl1a");
-let tbl2a = document.querySelector(".tbl2a");
-let tbl3a = document.querySelector(".tbl3a");
-let tbl4a = document.querySelector(".tbl4a");
-let tbl5a = document.querySelector(".tbl5a");
-let tbl6a = document.querySelector(".tbl6a");
-let tbl7a = document.querySelector(".tbl7a");
-let tbl8a = document.querySelector(".tbl8a");
-let tbl9a = document.querySelector(".tbl9a");
-let tbl10a = document.querySelector(".tbl10a");
-let tbl11a = document.querySelector(".tbl11a");
-let tbl12a = document.querySelector(".tbl12a");
-let tbl13a = document.querySelector(".tbl13a");
-let tbl14a = document.querySelector(".tbl14a");
-let tbl15a = document.querySelector(".tbl15a");
-let tbl16a = document.querySelector(".tbl16a");
 
 let tbl1b = document.querySelector(".tbl1b");//Colonies/slide
 let tbl2b = document.querySelector(".tbl2b");
@@ -155,22 +88,6 @@ let tbl13b = document.querySelector(".tbl13b");
 let tbl14b = document.querySelector(".tbl14b");
 let tbl15b = document.querySelector(".tbl15b");
 let tbl16b = document.querySelector(".tbl16b");
-let tbl1ba = document.querySelector(".tbl1ba");
-let tbl2ba = document.querySelector(".tbl2ba");
-let tbl3ba = document.querySelector(".tbl3ba");
-let tbl4ba = document.querySelector(".tbl4ba");
-let tbl5ba = document.querySelector(".tbl5ba");
-let tbl6ba = document.querySelector(".tbl6ba");
-let tbl7ba = document.querySelector(".tbl7ba");
-let tbl8ba = document.querySelector(".tbl8ba");
-let tbl9ba = document.querySelector(".tbl9ba");
-let tbl10ba = document.querySelector(".tbl10ba");
-let tbl11ba = document.querySelector(".tbl11ba");
-let tbl12ba = document.querySelector(".tbl12ba");
-let tbl13ba = document.querySelector(".tbl13ba");
-let tbl14ba = document.querySelector(".tbl14ba");
-let tbl15ba = document.querySelector(".tbl15ba");
-let tbl16ba = document.querySelector(".tbl16ba");
 
 let tbl1c = document.querySelector(".tbl1c");//Colonies/L
 let tbl2c = document.querySelector(".tbl2c");
@@ -188,23 +105,6 @@ let tbl13c = document.querySelector(".tbl13c");
 let tbl14c = document.querySelector(".tbl14c");
 let tbl15c = document.querySelector(".tbl15c");
 let tbl16c = document.querySelector(".tbl16c");
-let tbl1ca = document.querySelector(".tbl1ca");
-let tbl2ca = document.querySelector(".tbl2ca");
-let tbl3ca = document.querySelector(".tbl3ca");
-let tbl4ca = document.querySelector(".tbl4ca");
-let tbl5ca = document.querySelector(".tbl5ca");
-let tbl6ca = document.querySelector(".tbl6ca");
-let tbl7ca = document.querySelector(".tbl7ca");
-let tbl8ca = document.querySelector(".tbl8ca");
-let tbl9ca = document.querySelector(".tbl9ca");
-let tbl10ca = document.querySelector(".tbl10ca");
-let tbl11ca = document.querySelector(".tbl11ca");
-let tbl12ca = document.querySelector(".tbl12ca");
-let tbl13ca = document.querySelector(".tbl13ca");
-let tbl14ca = document.querySelector(".tbl14ca");
-let tbl15ca = document.querySelector(".tbl15ca");
-let tbl16ca = document.querySelector(".tbl16ca");
-
 
 let tbl1d = document.querySelector(".tbl1d");//Relative abundance (%)
 let tbl2d = document.querySelector(".tbl2d");
@@ -222,22 +122,6 @@ let tbl13d = document.querySelector(".tbl13d");
 let tbl14d = document.querySelector(".tbl14d");
 let tbl15d = document.querySelector(".tbl15d");
 let tbl16d = document.querySelector(".tbl16d");
-let tbl1da = document.querySelector(".tbl1da");
-let tbl2da = document.querySelector(".tbl2da");
-let tbl3da = document.querySelector(".tbl3da");
-let tbl4da = document.querySelector(".tbl4da");
-let tbl5da = document.querySelector(".tbl5da");
-let tbl6da = document.querySelector(".tbl6da");
-let tbl7da = document.querySelector(".tbl7da");
-let tbl8da = document.querySelector(".tbl8da");
-let tbl9da = document.querySelector(".tbl9da");
-let tbl10da = document.querySelector(".tbl10da");
-let tbl11da = document.querySelector(".tbl11da");
-let tbl12da = document.querySelector(".tbl12da");
-let tbl13da = document.querySelector(".tbl13da");
-let tbl14da = document.querySelector(".tbl14da");
-let tbl15da = document.querySelector(".tbl15da");
-let tbl16da = document.querySelector(".tbl16da");
 
 let reset = document.querySelector(".reset");
 let exp = document.querySelector(".exp");
@@ -267,23 +151,6 @@ add13.addEventListener('click', addCounter13);
 add14.addEventListener('click', addCounter14);
 add15.addEventListener('click', addCounter15);
 add16.addEventListener('click', addCounter16);
-add1a.addEventListener('click', addCounter1a);
-add2a.addEventListener('click', addCounter2a);
-add3a.addEventListener('click', addCounter3a);
-add4a.addEventListener('click', addCounter4a);
-add5a.addEventListener('click', addCounter5a);
-add6a.addEventListener('click', addCounter6a);
-add7a.addEventListener('click', addCounter7a);
-add8a.addEventListener('click', addCounter8a);
-add9a.addEventListener('click', addCounter9a);
-add10a.addEventListener('click', addCounter10a);
-add11a.addEventListener('click', addCounter11a);
-add12a.addEventListener('click', addCounter12a);
-add13a.addEventListener('click', addCounter13a);
-add14a.addEventListener('click', addCounter14a);
-add15a.addEventListener('click', addCounter15a);
-add16a.addEventListener('click', addCounter16a);
-
 
 min1.addEventListener('click', minCounter1);
 min2.addEventListener('click', minCounter2);
@@ -301,23 +168,6 @@ min13.addEventListener('click', minCounter13);
 min14.addEventListener('click', minCounter14);
 min15.addEventListener('click', minCounter15);
 min16.addEventListener('click', minCounter16);
-min1a.addEventListener('click', minCounter1a);
-min2a.addEventListener('click', minCounter2a);
-min3a.addEventListener('click', minCounter3a);
-min4a.addEventListener('click', minCounter4a);
-min5a.addEventListener('click', minCounter5a);
-min6a.addEventListener('click', minCounter6a);
-min7a.addEventListener('click', minCounter7a);
-min8a.addEventListener('click', minCounter8a);
-min9a.addEventListener('click', minCounter9a);
-min10a.addEventListener('click', minCounter10a);
-min11a.addEventListener('click', minCounter11a);
-min12a.addEventListener('click', minCounter12a);
-min13a.addEventListener('click', minCounter13a);
-min14a.addEventListener('click', minCounter14a);
-min15a.addEventListener('click', minCounter15a);
-min16a.addEventListener('click', minCounter16a);
-
 
 //Add function for calculating relative abundance
 add1.addEventListener('click', rel);
@@ -336,23 +186,6 @@ add13.addEventListener('click', rel);
 add14.addEventListener('click', rel);
 add15.addEventListener('click', rel);
 add16.addEventListener('click', rel);
-add1a.addEventListener('click', rel);
-add2a.addEventListener('click', rel);
-add3a.addEventListener('click', rel);
-add4a.addEventListener('click', rel);
-add5a.addEventListener('click', rel);
-add6a.addEventListener('click', rel);
-add7a.addEventListener('click', rel);
-add8a.addEventListener('click', rel);
-add9a.addEventListener('click', rel);
-add10a.addEventListener('click', rel);
-add11a.addEventListener('click', rel);
-add12a.addEventListener('click', rel);
-add13a.addEventListener('click', rel);
-add14a.addEventListener('click', rel);
-add15a.addEventListener('click', rel);
-add16a.addEventListener('click', rel);
-
 
 min1.addEventListener('click', rel);
 min2.addEventListener('click', rel);
@@ -370,23 +203,6 @@ min13.addEventListener('click', rel);
 min14.addEventListener('click', rel);
 min15.addEventListener('click', rel);
 min16.addEventListener('click', rel);
-min1a.addEventListener('click', rel);
-min2a.addEventListener('click', rel);
-min3a.addEventListener('click', rel);
-min4a.addEventListener('click', rel);
-min5a.addEventListener('click', rel);
-min6a.addEventListener('click', rel);
-min7a.addEventListener('click', rel);
-min8a.addEventListener('click', rel);
-min9a.addEventListener('click', rel);
-min10a.addEventListener('click', rel);
-min11a.addEventListener('click', rel);
-min12a.addEventListener('click', rel);
-min13a.addEventListener('click', rel);
-min14a.addEventListener('click', rel);
-min15a.addEventListener('click', rel);
-min16a.addEventListener('click', rel);
-
 
 reset.addEventListener('click', resetCounter);
 exp.addEventListener('click', tableToCSV);
@@ -409,25 +225,8 @@ function rel(){
     c14 = totalcount14.innerHTML
     c15 = totalcount15.innerHTML
     c16 = totalcount16.innerHTML
-    c1a = totalcount1a.innerHTML
-    c2a = totalcount2a.innerHTML
-    c3a = totalcount3a.innerHTML
-    c4a = totalcount4a.innerHTML
-    c5a = totalcount5a.innerHTML
-    c6a = totalcount6a.innerHTML
-    c7a = totalcount7a.innerHTML
-    c8a = totalcount8a.innerHTML
-    c9a = totalcount9a.innerHTML
-    c10a = totalcount10a.innerHTML
-    c11a = totalcount11a.innerHTML
-    c12a = totalcount12a.innerHTML
-    c13a = totalcount13a.innerHTML
-    c14a = totalcount14a.innerHTML
-    c15a = totalcount15a.innerHTML
-    c16a = totalcount16a.innerHTML
 
-    var totabundance = parseInt(c1)+parseInt(c2)+parseInt(c3)+parseInt(c4)+parseInt(c5)+parseInt(c6)+parseInt(c7)+parseInt(c8)+parseInt(c9)+parseInt(c10)+parseInt(c11)+parseInt(c12)+parseInt(c13)+parseInt(c14)+parseInt(c15)+parseInt(c16)
-    +parseInt(c1a)+parseInt(c2a)+parseInt(c3a)+parseInt(c4a)+parseInt(c5a)+parseInt(c6a)+parseInt(c7a)+parseInt(c8a)+parseInt(c9a)+parseInt(c10a)+parseInt(c11a)+parseInt(c12a)+parseInt(c13a)+parseInt(c14a)+parseInt(c15a)+parseInt(c16a);//total cells counted of all taxa
+    var totabundance = parseInt(c1)+parseInt(c2)+parseInt(c3)+parseInt(c4)+parseInt(c5)+parseInt(c6)+parseInt(c7)+parseInt(c8)+parseInt(c9)+parseInt(c10)+parseInt(c11)+parseInt(c12)+parseInt(c13)+parseInt(c14)+parseInt(c15)+parseInt(c16);//total cells counted of all taxa
     
     var r1 = parseFloat((c1/totabundance)*100)//relative abundance of each type
     var r2 = parseFloat((c2/totabundance)*100)
@@ -445,23 +244,6 @@ function rel(){
     var r14 = parseFloat((c14/totabundance)*100)
     var r15 = parseFloat((c15/totabundance)*100)
     var r16 = parseFloat((c16/totabundance)*100)
-    var r1a = parseFloat((c1a/totabundance)*100)//relative abundance of each type
-    var r2a = parseFloat((c2a/totabundance)*100)
-    var r3a = parseFloat((c3a/totabundance)*100)
-    var r4a = parseFloat((c4a/totabundance)*100)
-    var r5a = parseFloat((c5a/totabundance)*100)
-    var r6a = parseFloat((c6a/totabundance)*100)
-    var r7a = parseFloat((c7a/totabundance)*100)
-    var r8a = parseFloat((c8a/totabundance)*100)
-    var r9a = parseFloat((c9a/totabundance)*100)
-    var r10a = parseFloat((c10a/totabundance)*100)
-    var r11a = parseFloat((c11a/totabundance)*100)
-    var r12a = parseFloat((c12a/totabundance)*100)
-    var r13a = parseFloat((c13a/totabundance)*100)
-    var r14a = parseFloat((c14a/totabundance)*100)
-    var r15a = parseFloat((c15a/totabundance)*100)
-    var r16a = parseFloat((c16a/totabundance)*100)
-
     
     tbl1d.innerHTML = parseFloat(r1.toFixed(1))//insert relative abundance in column "d" of table
     tbl2d.innerHTML = parseFloat(r2.toFixed(1))
@@ -479,22 +261,6 @@ function rel(){
     tbl14d.innerHTML = parseFloat(r14.toFixed(1))
     tbl15d.innerHTML = parseFloat(r15.toFixed(1))
     tbl16d.innerHTML = parseFloat(r16.toFixed(1))
-    tbl1da.innerHTML = parseFloat(r1a.toFixed(1))//insert relative abundance in column "d" of table
-    tbl2da.innerHTML = parseFloat(r2a.toFixed(1))
-    tbl3da.innerHTML = parseFloat(r3a.toFixed(1))
-    tbl4da.innerHTML = parseFloat(r4a.toFixed(1))
-    tbl5da.innerHTML = parseFloat(r5a.toFixed(1))
-    tbl6da.innerHTML = parseFloat(r6a.toFixed(1))
-    tbl7da.innerHTML = parseFloat(r7a.toFixed(1))
-    tbl8da.innerHTML = parseFloat(r8a.toFixed(1))
-    tbl9da.innerHTML = parseFloat(r9a.toFixed(1))
-    tbl10da.innerHTML = parseFloat(r10a.toFixed(1))
-    tbl11da.innerHTML = parseFloat(r11a.toFixed(1))
-    tbl12da.innerHTML = parseFloat(r12a.toFixed(1))
-    tbl13da.innerHTML = parseFloat(r13a.toFixed(1))
-    tbl14da.innerHTML = parseFloat(r14a.toFixed(1))
-    tbl15da.innerHTML = parseFloat(r15a.toFixed(1))
-    tbl16da.innerHTML = parseFloat(r16a.toFixed(1))
 
     var rows = parseFloat(document.getElementById("text10").value)//#rows coutned by user
     var percslide = parseFloat(rows / 20) //percent of slide counted based on number of rows
@@ -518,24 +284,7 @@ function rel(){
     var cps14 = parseFloat(c14/percslide)
     var cps15 = parseFloat(c15/percslide)
     var cps16 = parseFloat(c16/percslide)
-    var cps1a = parseFloat(c1a/percslide) //5 counted rows x 4 = total of 20 rows per slide
-    var cps2a = parseFloat(c2a/percslide) 
-    var cps3a = parseFloat(c3a/percslide) 
-    var cps4a = parseFloat(c4a/percslide) 
-    var cps5a = parseFloat(c5a/percslide) 
-    var cps6a = parseFloat(c6a/percslide) 
-    var cps7a = parseFloat(c7a/percslide) 
-    var cps8a = parseFloat(c8a/percslide) 
-    var cps9a = parseFloat(c9a/percslide)
-    var cps10a = parseFloat(c10a/percslide)
-    var cps11a = parseFloat(c11a/percslide)
-    var cps12a = parseFloat(c12a/percslide)
-    var cps13a = parseFloat(c13a/percslide)
-    var cps14a = parseFloat(c14a/percslide)
-    var cps15a = parseFloat(c15a/percslide)
-    var cps16a = parseFloat(c16a/percslide)
 
-    
     var chambervol = parseFloat(0.001)//1 ml = 0.001 L (Sedgewick Rafter Cell volume)
     var propcounted = parseFloat(chambervol / gradcylinderliter) //proportion volume of Sedgewick Rafter counted based on #rows counted
 
@@ -555,24 +304,7 @@ function rel(){
     var cpsamp14 = parseFloat(cps14 / propcounted)
     var cpsamp15 = parseFloat(cps15 / propcounted)
     var cpsamp16 = parseFloat(cps16 / propcounted)
-    var cpsamp1a = parseFloat(cps1a / propcounted)//cells per sample
-    var cpsamp2a = parseFloat(cps2a / propcounted)
-    var cpsamp3a = parseFloat(cps3a / propcounted)
-    var cpsamp4a = parseFloat(cps4a / propcounted)
-    var cpsamp5a = parseFloat(cps5a / propcounted)
-    var cpsamp6a = parseFloat(cps6a / propcounted)
-    var cpsamp7a = parseFloat(cps7a / propcounted)
-    var cpsamp8a = parseFloat(cps8a / propcounted)
-    var cpsamp9a = parseFloat(cps9a / propcounted)
-    var cpsamp10a = parseFloat(cps10a / propcounted)
-    var cpsamp11a = parseFloat(cps11a / propcounted)
-    var cpsamp12a = parseFloat(cps12a / propcounted)
-    var cpsamp13a = parseFloat(cps13a / propcounted)
-    var cpsamp14a = parseFloat(cps14a / propcounted)
-    var cpsamp15a = parseFloat(cps15a / propcounted)
-    var cpsamp16a = parseFloat(cps16a / propcounted)
-
-
+    
     var diameter = parseFloat(document.getElementById("text9").value)
     var depth = parseFloat(document.getElementById("text8").value)
     var r = parseFloat(diameter/2)
@@ -595,23 +327,6 @@ function rel(){
     var cpl14 = parseFloat(cpsamp14/lakewaterL)
     var cpl15 = parseFloat(cpsamp15/lakewaterL)
     var cpl16 = parseFloat(cpsamp16/lakewaterL)
-    var cpl1a = parseFloat(cpsamp1a/lakewaterL)//cells per liter lake water
-    var cpl2a = parseFloat(cpsamp2a/lakewaterL)
-    var cpl3a = parseFloat(cpsamp3a/lakewaterL)
-    var cpl4a = parseFloat(cpsamp4a/lakewaterL)
-    var cpl5a = parseFloat(cpsamp5a/lakewaterL)
-    var cpl6a = parseFloat(cpsamp6a/lakewaterL)
-    var cpl7a = parseFloat(cpsamp7a/lakewaterL)
-    var cpl8a = parseFloat(cpsamp8a/lakewaterL)
-    var cpl9a = parseFloat(cpsamp9a/lakewaterL)
-    var cpl10a = parseFloat(cpsamp10a/lakewaterL)
-    var cpl11a = parseFloat(cpsamp11a/lakewaterL)
-    var cpl12a = parseFloat(cpsamp12a/lakewaterL)
-    var cpl13a = parseFloat(cpsamp13a/lakewaterL)
-    var cpl14a = parseFloat(cpsamp14a/lakewaterL)
-    var cpl15a = parseFloat(cpsamp15a/lakewaterL)
-    var cpl16a = parseFloat(cpsamp16a/lakewaterL)
-
     
     tbl1b.innerHTML = parseFloat(cps1.toFixed(3))//insert cells per sample in column "b" of table
     tbl2b.innerHTML = parseFloat(cps2.toFixed(3))
@@ -629,23 +344,6 @@ function rel(){
     tbl14b.innerHTML = parseFloat(cps14.toFixed(3))
     tbl15b.innerHTML = parseFloat(cps15.toFixed(3))
     tbl16b.innerHTML = parseFloat(cps16.toFixed(3))
-    tbl1ba.innerHTML = parseFloat(cps1a.toFixed(3))
-    tbl2ba.innerHTML = parseFloat(cps2a.toFixed(3))
-    tbl3ba.innerHTML = parseFloat(cps3a.toFixed(3))
-    tbl4ba.innerHTML = parseFloat(cps4a.toFixed(3))
-    tbl5ba.innerHTML = parseFloat(cps5a.toFixed(3))
-    tbl6ba.innerHTML = parseFloat(cps6a.toFixed(3))
-    tbl7ba.innerHTML = parseFloat(cps7a.toFixed(3))
-    tbl8ba.innerHTML = parseFloat(cps8a.toFixed(3))
-    tbl9ba.innerHTML = parseFloat(cps9a.toFixed(3))
-    tbl10ba.innerHTML = parseFloat(cps10a.toFixed(3))
-    tbl11ba.innerHTML = parseFloat(cps11a.toFixed(3))
-    tbl12ba.innerHTML = parseFloat(cps12a.toFixed(3))
-    tbl13ba.innerHTML = parseFloat(cps13a.toFixed(3))
-    tbl14ba.innerHTML = parseFloat(cps14a.toFixed(3))
-    tbl15ba.innerHTML = parseFloat(cps15a.toFixed(3))
-    tbl16ba.innerHTML = parseFloat(cps16a.toFixed(3))
-
 
     tbl1c.innerHTML = parseFloat(cpl1.toFixed(3))//insert cells per liter lake water in column "c" of table
     tbl2c.innerHTML = parseFloat(cpl2.toFixed(3))
@@ -663,23 +361,6 @@ function rel(){
     tbl14c.innerHTML = parseFloat(cpl14.toFixed(3))
     tbl15c.innerHTML = parseFloat(cpl15.toFixed(3))
     tbl16c.innerHTML = parseFloat(cpl16.toFixed(3))
-    tbl1ca.innerHTML = parseFloat(cpl1a.toFixed(3))//insert cells per liter lake water in column "c" of table
-    tbl2ca.innerHTML = parseFloat(cpl2a.toFixed(3))
-    tbl3ca.innerHTML = parseFloat(cpl3a.toFixed(3))
-    tbl4ca.innerHTML = parseFloat(cpl4a.toFixed(3))
-    tbl5ca.innerHTML = parseFloat(cpl5a.toFixed(3))
-    tbl6ca.innerHTML = parseFloat(cpl6a.toFixed(3))
-    tbl7ca.innerHTML = parseFloat(cpl7a.toFixed(3))
-    tbl8ca.innerHTML = parseFloat(cpl8a.toFixed(3))
-    tbl9ca.innerHTML = parseFloat(cpl9a.toFixed(3))
-    tbl10ca.innerHTML = parseFloat(cpl10a.toFixed(3))
-    tbl11ca.innerHTML = parseFloat(cpl11a.toFixed(3))
-    tbl12ca.innerHTML = parseFloat(cpl12a.toFixed(3))
-    tbl13ca.innerHTML = parseFloat(cpl13a.toFixed(3))
-    tbl14ca.innerHTML = parseFloat(cpl14a.toFixed(3))
-    tbl15ca.innerHTML = parseFloat(cpl15a.toFixed(3))
-    tbl16ca.innerHTML = parseFloat(cpl16a.toFixed(3))
-
 }
 
 //////////Add-button functions
@@ -768,97 +449,6 @@ function addCounter16(){
     totalcount16.innerHTML = parseInt(counter_num) + 1
     tbl16.innerHTML = parseInt(counter_num) + 1
 };
-function addCounter16(){
-    counter_num = totalcount16.innerHTML
-    totalcount16.innerHTML = parseInt(counter_num) + 1
-    tbl16.innerHTML = parseInt(counter_num) + 1
-};
-function addCounter1a(){
-    //First add counter # to table
-    // console.log("It's working")
-    counter_num = totalcount1a.innerHTML
-    c2a = totalcount2a.innerHTML
-    totalcount1a.innerHTML = parseInt(counter_num) + 1
-    tbl1a.innerHTML = parseInt(counter_num) + 1
-};
-
-function addCounter2a(){
-    counter_num = totalcount2a.innerHTML
-    totalcount2a.innerHTML = parseInt(counter_num) + 1
-    tbl2a.innerHTML = parseInt(counter_num) + 1
-};
-function addCounter3a(){
-    counter_num = totalcount3a.innerHTML
-    totalcount3a.innerHTML = parseInt(counter_num) + 1
-    tbl3a.innerHTML = parseInt(counter_num) + 1
-};
-function addCounter4a(){
-    counter_num = totalcount4a.innerHTML
-    totalcount4a.innerHTML = parseInt(counter_num) + 1
-    tbl4a.innerHTML = parseInt(counter_num) + 1
-};
-function addCounter5a(){
-    counter_num = totalcount5a.innerHTML
-    totalcount5a.innerHTML = parseInt(counter_num) + 1
-    tbl5a.innerHTML = parseInt(counter_num) + 1
-};
-function addCounter6a(){
-    // console.log("It's working")
-    counter_num = totalcount6a.innerHTML
-    totalcount6a.innerHTML = parseInt(counter_num) + 1
-    tbl6a.innerHTML = parseInt(counter_num) + 1
-};
-function addCounter7a(){
-    counter_num = totalcount7a.innerHTML
-    totalcount7a.innerHTML = parseInt(counter_num) + 1
-    tbl7a.innerHTML = parseInt(counter_num) + 1
-};
-function addCounter8a(){
-    counter_num = totalcount8a.innerHTML
-    totalcount8a.innerHTML = parseInt(counter_num) + 1
-    tbl8a.innerHTML = parseInt(counter_num) + 1
-};
-function addCounter9a(){
-    counter_num = totalcount9a.innerHTML
-    totalcount9a.innerHTML = parseInt(counter_num) + 1
-    tbl9a.innerHTML = parseInt(counter_num) + 1
-};
-function addCounter10a(){
-    counter_num = totalcount10a.innerHTML
-    totalcount10a.innerHTML = parseInt(counter_num) + 1
-    tbl10a.innerHTML = parseInt(counter_num) + 1
-};
-function addCounter11a(){
-    counter_num = totalcount11a.innerHTML
-    totalcount11a.innerHTML = parseInt(counter_num) + 1
-    tbl11a.innerHTML = parseInt(counter_num) + 1
-};
-function addCounter12a(){
-    counter_num = totalcount12a.innerHTML
-    totalcount12a.innerHTML = parseInt(counter_num) + 1
-    tbl12a.innerHTML = parseInt(counter_num) + 1
-};
-function addCounter13a(){
-    counter_num = totalcount13a.innerHTML
-    totalcount13a.innerHTML = parseInt(counter_num) + 1
-    tbl13a.innerHTML = parseInt(counter_num) + 1
-};
-function addCounter14a(){
-    counter_num = totalcount14a.innerHTML
-    totalcount14a.innerHTML = parseInt(counter_num) + 1
-    tbl14a.innerHTML = parseInt(counter_num) + 1
-};
-function addCounter15a(){
-    counter_num = totalcount15a.innerHTML
-    totalcount15a.innerHTML = parseInt(counter_num) + 1
-    tbl15a.innerHTML = parseInt(counter_num) + 1
-};
-function addCounter16a(){
-    counter_num = totalcount16a.innerHTML
-    totalcount16a.innerHTML = parseInt(counter_num) + 1
-    tbl16a.innerHTML = parseInt(counter_num) + 1
-};
-
 
 ///////////Minus button functions
 function minCounter1(){
@@ -990,135 +580,6 @@ function minCounter16(){
     totalcount16.innerHTML = parseInt(counter_num) - 1
     tbl16.innerHTML = parseInt(counter_num) - 1
 };
-function minCounter1a(){
-    // console.log("It's working")
-    counter_num = totalcount1a.innerHTML
-    if (counter_num == 0){
-        return false
-    }
-    totalcount1a.innerHTML = parseInt(counter_num) - 1
-    tbl1a.innerHTML = parseInt(counter_num) - 1
-};
-function minCounter2a(){
-    counter_num = totalcount2a.innerHTML
-    if (counter_num == 0){
-        return false
-    }
-    totalcount2a.innerHTML = parseInt(counter_num) - 1
-    tbl2a.innerHTML = parseInt(counter_num) - 1
-};
-function minCounter3a(){
-    counter_num = totalcount3a.innerHTML
-    if (counter_num == 0){
-        return false
-    }
-    totalcount3a.innerHTML = parseInt(counter_num) - 1
-    tbl3a.innerHTML = parseInt(counter_num) - 1
-};
-function minCounter4a(){
-    counter_num = totalcount4a.innerHTML
-    if (counter_num == 0){
-        return false
-    }
-    totalcount4a.innerHTML = parseInt(counter_num) - 1
-    tbl4a.innerHTML = parseInt(counter_num) - 1
-};
-function minCounter5a(){
-    counter_num = totalcount5a.innerHTML
-    if (counter_num == 0){
-        return false
-    }
-    totalcount5a.innerHTML = parseInt(counter_num) - 1
-    tbl5a.innerHTML = parseInt(counter_num) - 1
-};
-function minCounter6a(){
-    counter_num = totalcount6a.innerHTML
-    if (counter_num == 0){
-        return false
-    }
-    totalcount6a.innerHTML = parseInt(counter_num) - 1
-    tbl6a.innerHTML = parseInt(counter_num) - 1
-};
-function minCounter7a(){
-    counter_num = totalcount7.innerHTML
-    if (counter_num == 0){
-        return false
-    }
-    totalcount7a.innerHTML = parseInt(counter_num) - 1
-    tbl7a.innerHTML = parseInt(counter_num) - 1
-};
-function minCounter8(){
-    counter_num = totalcount8a.innerHTML
-    if (counter_num == 0){
-        return false
-    }
-    totalcount8a.innerHTML = parseInt(counter_num) - 1
-    tbl8a.innerHTML = parseInt(counter_num) - 1
-};
-function minCounter9a(){
-    counter_num = totalcount9a.innerHTML
-    if (counter_num == 0){
-        return false
-    }
-    totalcount9a.innerHTML = parseInt(counter_num) - 1
-    tbl9a.innerHTML = parseInt(counter_num) - 1
-};
-function minCounter10a(){
-    counter_num = totalcount10a.innerHTML
-    if (counter_num == 0){
-        return false
-    }
-    totalcount10a.innerHTML = parseInt(counter_num) - 1
-    tbl10a.innerHTML = parseInt(counter_num) - 1
-};
-function minCounter11a(){
-    counter_num = totalcount11a.innerHTML
-    if (counter_num == 0){
-        return false
-    }
-    totalcount11a.innerHTML = parseInt(counter_num) - 1
-    tbl11a.innerHTML = parseInt(counter_num) - 1
-};
-function minCounter12a(){
-    counter_num = totalcount12a.innerHTML
-    if (counter_num == 0){
-        return false
-    }
-    totalcount12a.innerHTML = parseInt(counter_num) - 1
-    tbl12a.innerHTML = parseInt(counter_num) - 1
-};
-function minCounter13a(){
-    counter_num = totalcount13a.innerHTML
-    if (counter_num == 0){
-        return false
-    }
-    totalcount13a.innerHTML = parseInt(counter_num) - 1
-    tbl13a.innerHTML = parseInt(counter_num) - 1
-};
-function minCounter14a(){
-    counter_num = totalcount14a.innerHTML
-    if (counter_num == 0){
-        return false
-    }
-    totalcount14a.innerHTML = parseInt(counter_num) - 1
-    tbl14a.innerHTML = parseInt(counter_num) - 1
-};
-function minCounter15a(){
-    counter_num = totalcount15a.innerHTML
-    if (counter_num == 0){
-        return false
-    }
-    totalcount15a.innerHTML = parseInt(counter_num) - 1
-    tbl15a.innerHTML = parseInt(counter_num) - 1
-};
-function minCounter16a(){
-    counter_num = totalcount16a.innerHTML
-    if (counter_num == 0){
-        return false
-    }
-    totalcount16a.innerHTML = parseInt(counter_num) - 1
-    tbl16a.innerHTML = parseInt(counter_num) - 1
-};
 
 
 //////////Reset button function
@@ -1140,23 +601,6 @@ function resetCounter(){
     totalcount14.innerHTML = 0;
     totalcount15.innerHTML = 0;
     totalcount16.innerHTML = 0;
-    totalcount1a.innerHTML = 0;
-    totalcount2a.innerHTML = 0;
-    totalcount3a.innerHTML = 0;
-    totalcount4a.innerHTML = 0;
-    totalcount5a.innerHTML = 0;
-    totalcount6a.innerHTML = 0;
-    totalcount7a.innerHTML = 0;
-    totalcount8a.innerHTML = 0;
-    totalcount9a.innerHTML = 0;
-    totalcount10a.innerHTML = 0;
-    totalcount11a.innerHTML = 0;
-    totalcount12a.innerHTML = 0;
-    totalcount13a.innerHTML = 0;
-    totalcount14a.innerHTML = 0;
-    totalcount15a.innerHTML = 0;
-    totalcount16a.innerHTML = 0;
-    
     tbl1.innerHTML = 0;
     tbl2.innerHTML = 0;
     tbl3.innerHTML = 0;
@@ -1173,23 +617,6 @@ function resetCounter(){
     tbl14.innerHTML = 0;
     tbl15.innerHTML = 0;
     tbl16.innerHTML = 0;
-    tbl1a.innerHTML = 0;
-    tbl2a.innerHTML = 0;
-    tbl3a.innerHTML = 0;
-    tbl4a.innerHTML = 0;
-    tbl5a.innerHTML = 0;
-    tbl6a.innerHTML = 0;
-    tbl7a.innerHTML = 0;
-    tbl8a.innerHTML = 0;
-    tbl9a.innerHTML = 0;
-    tbl10a.innerHTML = 0;
-    tbl11a.innerHTML = 0;
-    tbl12a.innerHTML = 0;
-    tbl13a.innerHTML = 0;
-    tbl14a.innerHTML = 0;
-    tbl15a.innerHTML = 0;
-    tbl16a.innerHTML = 0;
-
     tbl1b.innerHTML = 0;
     tbl2b.innerHTML = 0;
     tbl3b.innerHTML = 0;
@@ -1206,23 +633,6 @@ function resetCounter(){
     tbl14b.innerHTML = 0;
     tbl15b.innerHTML = 0;
     tbl16b.innerHTML = 0;
-    tbl1ba.innerHTML = 0;
-    tbl2ba.innerHTML = 0;
-    tbl3ba.innerHTML = 0;
-    tbl4ba.innerHTML = 0;
-    tbl5ba.innerHTML = 0;
-    tbl6ba.innerHTML = 0;
-    tbl7ba.innerHTML = 0;
-    tbl8ba.innerHTML = 0;
-    tbl9ba.innerHTML = 0;
-    tbl10ba.innerHTML = 0;
-    tbl11ba.innerHTML = 0;
-    tbl12ba.innerHTML = 0;
-    tbl13ba.innerHTML = 0;
-    tbl14ba.innerHTML = 0;
-    tbl15ba.innerHTML = 0;
-    tbl16ba.innerHTML = 0;
-
     tbl1c.innerHTML = 0;
     tbl2c.innerHTML = 0;
     tbl3c.innerHTML = 0;
@@ -1239,23 +649,6 @@ function resetCounter(){
     tbl14c.innerHTML = 0;
     tbl15c.innerHTML = 0;
     tbl16c.innerHTML = 0;
-    tbl1ca.innerHTML = 0;
-    tbl2ca.innerHTML = 0;
-    tbl3ca.innerHTML = 0;
-    tbl4ca.innerHTML = 0;
-    tbl5ca.innerHTML = 0;
-    tbl6ca.innerHTML = 0;
-    tbl7ca.innerHTML = 0;
-    tbl8ca.innerHTML = 0;
-    tbl9ca.innerHTML = 0;
-    tbl10ca.innerHTML = 0;
-    tbl11ca.innerHTML = 0;
-    tbl12ca.innerHTML = 0;
-    tbl13ca.innerHTML = 0;
-    tbl14ca.innerHTML = 0;
-    tbl15ca.innerHTML = 0;
-    tbl16ca.innerHTML = 0;
-
         console.log('Counters have been reset.');
       } else {
         // Do nothing!
@@ -1383,23 +776,6 @@ const tax13out = document.getElementById("tax13out");
 const tax14out = document.getElementById("tax14out");
 const tax15out = document.getElementById("tax15out");
 const tax16out = document.getElementById("tax16out");
-const tax1aout = document.getElementById("tax1aout");
-const tax2aout = document.getElementById("tax2aout");
-const tax3aout = document.getElementById("tax3aout");
-const tax4aout = document.getElementById("tax4aout");
-const tax5aout = document.getElementById("tax5aout");
-const tax6aout = document.getElementById("tax6aout");
-const tax7aout = document.getElementById("tax7aout");
-const tax8aout = document.getElementById("tax8aout");
-const tax9aout = document.getElementById("tax9aout");
-const tax10aout = document.getElementById("tax10aout");
-const tax11aout = document.getElementById("tax11aout");
-const tax12aout = document.getElementById("tax12aout");
-const tax13aout = document.getElementById("tax13aout");
-const tax14aout = document.getElementById("tax14aout");
-const tax15aout = document.getElementById("tax15aout");
-const tax16aout = document.getElementById("tax16aout");
-
 
 function namechange(){
     tax1 = document.getElementById("tax1").value;
@@ -1418,23 +794,6 @@ function namechange(){
     tax14 = document.getElementById("tax14").value;
     tax15 = document.getElementById("tax15").value;
     tax16 = document.getElementById("tax16").value;
-    tax1a = document.getElementById("tax1a").value;
-    tax2a = document.getElementById("tax2a").value;
-    tax3a = document.getElementById("tax3a").value;
-    tax4a = document.getElementById("tax4a").value;
-    tax5a = document.getElementById("tax5a").value;
-    tax6a = document.getElementById("tax6a").value;
-    tax7a = document.getElementById("tax7a").value;
-    tax8a = document.getElementById("tax8a").value;
-    tax9a = document.getElementById("tax9a").value;
-    tax10a = document.getElementById("tax10a").value;
-    tax11a = document.getElementById("tax11a").value;
-    tax12a = document.getElementById("tax12a").value;
-    tax13a = document.getElementById("tax13a").value;
-    tax14a = document.getElementById("tax14a").value;
-    tax15a = document.getElementById("tax15a").value;
-    tax16a = document.getElementById("tax16a").value;
-
     
     tax1out.innerHTML = tax1;
     tax2out.innerHTML = tax2;
@@ -1452,23 +811,6 @@ function namechange(){
     tax14out.innerHTML = tax14;
     tax15out.innerHTML = tax15;
     tax16out.innerHTML = tax16;
-    tax1aout.innerHTML = tax1a;
-    tax2aout.innerHTML = tax2a;
-    tax3aout.innerHTML = tax3a;
-    tax4aout.innerHTML = tax4a;
-    tax5aout.innerHTML = tax5a;
-    tax6aout.innerHTML = tax6a;
-    tax7aout.innerHTML = tax7a;
-    tax8aout.innerHTML = tax8a;
-    tax9aout.innerHTML = tax9a;
-    tax10aout.innerHTML = tax10a;
-    tax11aout.innerHTML = tax11a;
-    tax12aout.innerHTML = tax12a;
-    tax13aout.innerHTML = tax13a;
-    tax14aout.innerHTML = tax14a;
-    tax15aout.innerHTML = tax15a;
-    tax16aout.innerHTML = tax16a;
-
 }
 
 
@@ -1492,23 +834,6 @@ function addnewcounter() {
     var y7 = document.getElementById("nextrow7");
     var x8 = document.getElementById("nextcounter8");
     var y8 = document.getElementById("nextrow8");
-    var x1a = document.getElementById("nextcounter1a");
-    var y1a = document.getElementById("nextrow1a");
-    var x2a = document.getElementById("nextcounter2a");
-    var y2a = document.getElementById("nextrow2a");
-    var x3a = document.getElementById("nextcounter3a");
-    var y3a = document.getElementById("nextrow3a");
-    var x4a = document.getElementById("nextcounter4a");
-    var y4a = document.getElementById("nextrow4a");
-    var x5a = document.getElementById("nextcounter5a");
-    var y5a = document.getElementById("nextrow5a");
-    var x6a = document.getElementById("nextcounter6a");
-    var y6a = document.getElementById("nextrow6a");
-    var x7a = document.getElementById("nextcounter7a");
-    var y7a = document.getElementById("nextrow7a");
-    var x8a = document.getElementById("nextcounter8a");
-    var y8a = document.getElementById("nextrow8a");
-
 
     if (x1.style.display === "none") {//Add counter
         x1.style.display = "block";}
@@ -1557,57 +882,4 @@ function addnewcounter() {
           if (y8.style.display === "none"){
               y8.style.display = "table-row";}
     }       
-    if (x1a.style.display === 9) {//Add counter
-        x1a.style.display = "block";}
-    if (y1a.style.display === "none"){    //Add table row
-        y1a.style.display = "table-row"};
-
-    if (numbercounters.innerHTML == 10){
-        if (x2a.style.display === "none") {
-            x2a.style.display = "block";}
-          if (y2a.style.display === "none"){
-              y2a.style.display = "table-row";}
-    }       
-    if (numbercounters.innerHTML == 11){
-        if (x3a.style.display === "none") {
-            x3a.style.display = "block";}
-          if (y3a.style.display === "none"){
-              y3a.style.display = "table-row";}
-    }       
-    if (numbercounters.innerHTML == 12){
-        if (x4a.style.display === "none") {
-            x4a.style.display = "block";}
-          if (y4a.style.display === "none"){
-              y4a.style.display = "table-row";}
-    }       
-    if (numbercounters.innerHTML == 13){
-        if (x5a.style.display === "none") {
-            x5a.style.display = "block";}
-          if (y5a.style.display === "none"){
-              y5a.style.display = "table-row";}
-    }       
-    if (numbercounters.innerHTML == 14){
-        if (x6a.style.display === "none") {
-            x6a.style.display = "block";}
-          if (y6a.style.display === "none"){
-              y6a.style.display = "table-row";}
-    }       
-    if (numbercounters.innerHTML == 15){
-        if (x7a.style.display === "none") {
-            x7a.style.display = "block";}
-          if (y7a.style.display === "none"){
-              y7a.style.display = "table-row";}
-    }       
-    if (numbercounters.innerHTML == 16){
-        if (x8a.style.display === "none") {
-            x8a.style.display = "block";}
-          if (y8a.style.display === "none"){
-              y8a.style.display = "table-row";}
-    }       
-
 }
-
-
-
-
-
