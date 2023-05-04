@@ -1492,8 +1492,8 @@ function addnewcounter() {
     var y7 = document.getElementById("nextrow7");
     var x8 = document.getElementById("nextcounter8");
     var y8 = document.getElementById("nextrow8");
-    var x1a = document.getElementById("nextcountera");
-    var y1a = document.getElementById("nextrowa");
+    var x1a = document.getElementById("nextcounter1a");
+    var y1a = document.getElementById("nextrow1a");
     var x2a = document.getElementById("nextcounter2a");
     var y2a = document.getElementById("nextrow2a");
     var x3a = document.getElementById("nextcounter3a");
